@@ -1,2 +1,2 @@
 # GUI-CMM
-Interface Gráfica com HTML e PHP
+Interface Gráfica do CMM com HTML e PHP
