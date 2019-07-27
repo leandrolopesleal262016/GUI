@@ -210,6 +210,7 @@ function escolheOpcao1 ($opcao1)
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
     <title>CMM</title>
 
@@ -254,39 +255,40 @@ function escolheOpcao1 ($opcao1)
               <div class="menu_section">
                 <h3>General</h3>
 				
-		<ul class="nav side-menu">
+				<ul class="nav side-menu">
 				
-		  <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
+		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="monitor.html">Monitor I/O</a></li>					  
-		    </ul>
+		            </ul>
                   </li>	
                                 
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="io.php">CMM I/O</a></li>	
-		      <li><a href="setup.php">CMM Setup</a></li>				  
-		    </ul>
+		              <li><a href="setup.php">CMM Setup</a></li>				  
+		            </ul>
                   </li>					  
 			
-		  <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
+		           <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                                              
-		      <li><a href="qrcode.php">QR Code Setup</a></li>				  
-		    </ul>
+		              <li><a href="qrcode.php">QR Code Setup</a></li>				  
+		            </ul>
                   </li>	
 	                   
                   <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>					  
-		    </ul>
+		            </ul>
                   </li>
 
-		  <li><a><i class="fa fa-folder-open"></i> Manuais <span class="fa fa-chevron-down"></span></a>
+		          <li><a><i class="fa fa-folder-open"></i> Manuais <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="manual_CMM.html">CMM</a></li>
-		      <li><a href="manual_QR.html">QR Code</a></li>					  
-		    </ul>
-                  </li>	
+		              <li><a href="manual_QR.html">QR Code</a></li>					  
+		            </ul>
+                  </li>
+                   
                 </ul>
               </div>
             </div>
@@ -843,7 +845,7 @@ function escolheOpcao1 ($opcao1)
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
+         <footer>
           <div class="pull-right">
             CMM CEINTEL - Admin Template by <a href="https://www.facebook.com/leandro.lopesleal.1">Leandro Leal</a>
           </div>
