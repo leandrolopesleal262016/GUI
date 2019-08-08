@@ -355,7 +355,7 @@ function escolheOpcao3 ($opcao3)
 				
 		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="monitor.html">Monitor I/O</a></li>					  
+                      <li><a href="monitor.php">Monitor I/O</a></li>					  
 		            </ul>
                   </li>	
                                 

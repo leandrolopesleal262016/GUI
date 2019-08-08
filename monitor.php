@@ -1,3 +1,34 @@
+<?php
+$server = 'localhost';
+$host = 'leandro';
+$senha = '5510';
+$bd = 'CMM';
+
+$mysqli = new mysqli($server, $host, $senha, $bd);
+
+if(mysqli_connect_errno()){
+	echo "Falha na conexão: (".$mysqli->connect_errno.")".$mysqli->connect_error;
+	exit();
+}
+
+$sql = "SELECT * FROM intertravamento ORDER BY id DESC LIMIT 1";
+$monitor = $mysqli->query($sql);
+$monitor = $monitor->fetch_array(MYSQLI_ASSOC);
+
+function escolheOpcao($opcao)
+{
+  if ($opcao == 1) {
+    echo '<option selected value="1">Ativado</option>';
+  } else {
+    echo '<option value="1">Ativado</option>';
+  }
+  if ($opcao == 0) {
+    echo '<option selected value="0">Desativado</option>';
+  } else {
+    echo '<option value="0">Desativado</option>';
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,7 +86,7 @@
 				
 		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="monitor.html">Monitor I/O</a></li>					  
+                      <li><a href="monitor.php">Monitor I/O</a></li>					  
 		            </ul>
                   </li>	
                                 
@@ -134,6 +165,20 @@
                     </div>
 		
 		    <div class="x_content"> 
+          <form action="intertravamento.php" method="post">
+            <div class="form-group">
+                <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Intertravamento </h2></label></center>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <select class="select_group form-control" id="habilitado" name="habilitado">
+                    <?php
+                    escolheOpcao($monitor['habilitado']);
+                    ?>                            
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success">Atualizar</button>
+          </form>
+
                 
 			<div class="col-md-12 col-sm-12 col-xs-12">                   
 

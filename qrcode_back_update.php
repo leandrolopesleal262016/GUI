@@ -1,10 +1,9 @@
 <?php
 
 $server = 'localhost';
-$host = 'eduardo';
-$senha = '24ledu28';
-$bd = 'cmm';
-
+$host = 'leandro';
+$senha = '5510';
+$bd = 'CMM';
 $mysqli = new mysqli($server, $host, $senha, $bd);
 
 if(mysqli_connect_errno()){
