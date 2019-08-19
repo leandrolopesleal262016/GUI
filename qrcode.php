@@ -277,7 +277,8 @@ function escolheOpcao3 ($opcao3)
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="io.php">CMM I/O</a></li>	
-		              <li><a href="setup.php">CMM Setup</a></li>				  
+                  <li><a href="setup.php">CMM Setup</a></li>	
+                  <li><a href="log.php">Log</a></li>			  
 		            </ul>
                   </li>					  
 			

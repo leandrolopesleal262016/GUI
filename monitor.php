@@ -3,7 +3,6 @@ $server = 'localhost';
 $host = 'leandro';
 $senha = '5510';
 $bd = 'CMM';
-
 $mysqli = new mysqli($server, $host, $senha, $bd);
 
 if(mysqli_connect_errno()){
@@ -93,7 +92,8 @@ function escolheOpcao($opcao)
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="io.php">CMM I/O</a></li>	
-		              <li><a href="setup.php">CMM Setup</a></li>				  
+                  <li><a href="setup.php">CMM Setup</a></li>				  
+                  <li><a href="log.php">Log</a></li>
 		            </ul>
                   </li>					  
 			
@@ -112,7 +112,8 @@ function escolheOpcao($opcao)
 		          <li><a><i class="fa fa-folder-open"></i> Manuais <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="manual_CMM.html">CMM</a></li>
-		              <li><a href="manual_QR.html">QR Code</a></li>					  
+                  <li><a href="manual_QR.html">QR Code</a></li>			
+                  <		  
 		            </ul>
                   </li>
 				
