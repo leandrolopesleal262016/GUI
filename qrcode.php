@@ -13,7 +13,7 @@ if(mysqli_connect_errno()){
 	exit();
 }
 
-$sql = "SELECT * FROM qrcode ORDER BY id DESC LIMIT 1";
+$sql = "SELECT * FROM leitores_qrcode ORDER BY id DESC LIMIT 1";
 $qrcode = $mysqli->query($sql);
 $qrcode = $qrcode->fetch_array(MYSQLI_ASSOC);
 
@@ -257,37 +257,28 @@ function escolheOpcao3 ($opcao3)
                 <h2>Leandro Leal</h2>
               </div>
             </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+        
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
 				
 				<ul class="nav side-menu">
 				
-		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
+		    <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="monitor.php">Monitor I/O</a></li>					  
-		            </ul>
+                      <li><a href="monitor.php">Monitor I/O</a></li>
+		      <li><a href="log.php">Log</a></li>					  
+		     </ul>
                   </li>	
                                 
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="io.php">CMM I/O</a></li>	
-                  <li><a href="setup.php">CMM Setup</a></li>	
-                  <li><a href="log.php">Log</a></li>			  
-		            </ul>
+                      <li><a href="io.php">CMM I/O</a></li>
+		      <li><a href="qrcode.php">QR Code</a></li>                     				  
+		     </ul>
                   </li>					  
 			
-		           <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">				                                              
-		              <li><a href="qrcode.php">QR Code Setup</a></li>				  
-		            </ul>
-                  </li>	
-	                   
+		    	                   
                   <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>					  
@@ -299,7 +290,7 @@ function escolheOpcao3 ($opcao3)
                       <li><a href="manual_CMM.html">CMM</a></li>
 		              <li><a href="manual_QR.html">QR Code</a></li>					  
 		            </ul>
-                  </li>
+                  </li>			
                    
                 </ul>
               </div>
@@ -389,13 +380,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 2</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 2</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_2" name="leitor_2">                            
-			  <?php escolheOpcao1($qrcode['leitor_2']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_2" name="leitor_2" value="<?=$qrcode["leitor_2"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -418,13 +408,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 3</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 3</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_3" name="leitor_3">                            
-			  <?php escolheOpcao1($qrcode['leitor_3']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_3" name="leitor_3" value="<?=$qrcode["leitor_3"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -447,13 +436,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 4</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 4</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_4" name="leitor_4">                            
-			  <?php escolheOpcao1($qrcode['leitor_4']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_4" name="leitor_4" value="<?=$qrcode["leitor_4"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                      					  
 					  
 		      <div class="form-group">
@@ -476,14 +464,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 5</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 5</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_5" name="leitor_5">                            
-			  <?php escolheOpcao1($qrcode['leitor_5']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_5" name="leitor_5" value="<?=$qrcode["leitor_5"]?>" placeholder="IP leitor"/>
                         </div>
-                      					  
+                     </div>				  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
@@ -505,13 +491,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 6</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 6</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_6" name="leitor_6">                            
-			  <?php escolheOpcao1($qrcode['leitor_6']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_6" name="leitor_6" value="<?=$qrcode["leitor_6"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -534,13 +519,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 7</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 7</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_7" name="leitor_7">                            
-			  <?php escolheOpcao1($qrcode['leitor_7']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_7" name="leitor_7" value="<?=$qrcode["leitor_7"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -563,13 +547,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 8</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 8</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_8" name="leitor_8">                            
-			  <?php escolheOpcao1($qrcode['leitor_8']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_8" name="leitor_8" value="<?=$qrcode["leitor_8"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -592,13 +575,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 9</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 9</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_9" name="leitor_9">                            
-			  <?php escolheOpcao1($qrcode['leitor_9']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_9" name="leitor_9" value="<?=$qrcode["leitor_9"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -621,13 +603,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 10</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 10</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_10" name="leitor_10">                            
-			  <?php escolheOpcao1($qrcode['leitor_10']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_10" name="leitor_10" value="<?=$qrcode["leitor_10"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -650,13 +631,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 11</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 11</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_11" name="leitor_11">                            
-			  <?php escolheOpcao1($qrcode['leitor_11']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_11" name="leitor_11" value="<?=$qrcode["leitor_11"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -679,13 +659,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 12</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 12</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_12" name="leitor_12">                            
-			  <?php escolheOpcao1($qrcode['leitor_12']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_12" name="leitor_12" value="<?=$qrcode["leitor_12"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                      					  
 					  
 		      <div class="form-group">
@@ -708,13 +687,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 13</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 13</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_13" name="leitor_13">                            
-			  <?php escolheOpcao1($qrcode['leitor_13']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_13" name="leitor_13" value="<?=$qrcode["leitor_13"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -737,13 +715,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 14</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 14</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_14" name="leitor_14">                            
-			  <?php escolheOpcao1($qrcode['leitor_14']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_14" name="leitor_14" value="<?=$qrcode["leitor_14"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
@@ -766,14 +743,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 15</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 15</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_15" name="leitor_15">                            
-			  <?php escolheOpcao1($qrcode['leitor_15']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_15" name="leitor_15" value="<?=$qrcode["leitor_15"]?>" placeholder="IP leitor"/>
                         </div>
-                      					  
+                     </div>				  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
@@ -795,13 +770,12 @@ function escolheOpcao3 ($opcao3)
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 16</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 16</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="leitor_16" name="leitor_16">                            
-			  <?php escolheOpcao1($qrcode['leitor_16']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_16" name="leitor_16" value="<?=$qrcode["leitor_16"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                      					  
 					  
 		      <div class="form-group">
@@ -825,22 +799,6 @@ function escolheOpcao3 ($opcao3)
 		      <div class="clearfix"></div>
 		  
 		    </div> 
- 		   </div> 
-		  </div> 
- 		 </div>
-		</div> 
-	       </div> 
-	      </div> 
-	     </div>  
-	    </div> 
- 	   </div> 
-	  </div> 
-	 </div>  
-	</div> 
-       </div> 
-      </div> 
-     </div>      
-
 		</div>					  
 		<center><button type="submit" class="btn btn-success btn-lg">Salvar Alterações</button></center>	
 		</form>

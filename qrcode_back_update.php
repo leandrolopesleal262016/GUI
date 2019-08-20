@@ -11,12 +11,12 @@ if(mysqli_connect_errno()){
 	exit();
 }
 
-$sql = "SELECT * FROM qrcode ORDER BY id DESC LIMIT 1";
+$sql = "SELECT * FROM leitores_qrcode ORDER BY id DESC LIMIT 1";
 $qrcode = $mysqli->query($sql);
 $entrada = $qrcode->fetch_array(MYSQLI_ASSOC);
 
 if (empty($entrada)) {
-    $sql = "INSERT INTO qrcode(
+    $sql = "INSERT INTO leitores_qrcode(
         leitor_1,
         leitor_2,
         leitor_3,

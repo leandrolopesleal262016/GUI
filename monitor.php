@@ -72,37 +72,28 @@ function escolheOpcao($opcao)
                 <h2>Leandro Leal</h2>
               </div>
             </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+        
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
 				
 				<ul class="nav side-menu">
 				
-		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
+		    <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="monitor.php">Monitor I/O</a></li>					  
-		            </ul>
+                      <li><a href="monitor.php">Monitor I/O</a></li>
+		      <li><a href="log.php">Log</a></li>					  
+		     </ul>
                   </li>	
                                 
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="io.php">CMM I/O</a></li>	
-                  <li><a href="setup.php">CMM Setup</a></li>				  
-                  <li><a href="log.php">Log</a></li>
-		            </ul>
+                      <li><a href="io.php">CMM I/O</a></li>
+		      <li><a href="qrcode.php">QR Code</a></li>                     				  
+		     </ul>
                   </li>					  
 			
-		           <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">				                                              
-		              <li><a href="qrcode.php">QR Code Setup</a></li>				  
-		            </ul>
-                  </li>	
-	                   
+		    	                   
                   <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>					  
@@ -112,11 +103,10 @@ function escolheOpcao($opcao)
 		          <li><a><i class="fa fa-folder-open"></i> Manuais <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="manual_CMM.html">CMM</a></li>
-                  <li><a href="manual_QR.html">QR Code</a></li>			
-                  <		  
+		              <li><a href="manual_QR.html">QR Code</a></li>					  
 		            </ul>
-                  </li>
-				
+                  </li>			
+                   
                 </ul>
               </div>
             </div>
