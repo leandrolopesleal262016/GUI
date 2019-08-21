@@ -1,0 +1,160 @@
+20/08/19 - 17:45:52  Evento:  
+Dados lidos pelo leitor 81432050351719
+20/08/19 - 17:45:52  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:45:52  Evento:  Qr correspondente as 17:40:00
+20/08/19 - 17:45:52  Evento:  Horario atual no CMM 17:45:52
+20/08/19 - 17:45:52  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:45:53  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:45:53  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:45:55  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:46:37  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 17:46:37  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+20/08/19 - 17:46:56  Evento:  Dados lidos pelo leitor 81432050351719
+
+20/08/19 - 17:46:57  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:46:57  Evento:  Qr correspondente as 17:40:00
+20/08/19 - 17:46:57  Evento:  Horario atual no CMM 17:46:57
+20/08/19 - 17:46:57  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:46:57  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:46:57  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:46:59  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:47:36  Evento:  Dados lidos pelo leitor 79132050351719
+
+20/08/19 - 17:47:37  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:47:37  Evento:  Qr correspondente as 17:40:00
+20/08/19 - 17:47:37  Evento:  Horario atual no CMM 17:47:37
+20/08/19 - 17:47:37  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:47:37  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:47:37  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:47:39  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:48:09  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 17:48:10  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+20/08/19 - 17:48:32  Evento:  Dados lidos pelo leitor 79132050351719
+
+20/08/19 - 17:48:33  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:48:33  Evento:  Qr correspondente as 17:40:00
+20/08/19 - 17:48:33  Evento:  Horario atual no CMM 17:48:33
+20/08/19 - 17:48:33  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:48:34  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:48:34  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:48:36  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:49:07  Evento:  Dados lidos pelo leitor 79132050351719
+
+20/08/19 - 17:49:07  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:49:07  Evento:  Qr correspondente as 17:40:00
+20/08/19 - 17:49:07  Evento:  Horario atual no CMM 17:49:07
+20/08/19 - 17:49:07  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:49:08  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:49:08  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:49:10  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:49:51  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 17:49:51  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+20/08/19 - 17:49:59  Evento:  
+Dados lidos pelo leitor 79132050351719
+
+20/08/19 - 17:50:00  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:50:00  Evento:  Qr correspondente as 17:40:00
+20/08/19 - 17:50:00  Evento:  Horario atual no CMM 17:50:00
+20/08/19 - 17:50:00  Evento:  Este QRCode ja mudou
+20/08/19 - 17:50:11  Evento:  
+Dados lidos pelo leitor 2267873961841
+
+20/08/19 - 17:50:11  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:50:11  Evento:  Qr correspondente as 17:50:00
+20/08/19 - 17:50:11  Evento:  Horario atual no CMM 17:50:11
+20/08/19 - 17:50:11  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:50:12  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:50:12  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:50:14  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:54:10  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 17:54:11  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+
+20/08/19 - 17:54:27  Evento:  Dados lidos pelo leitor 4377873961841
+20/08/19 - 17:54:28  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:54:28  Evento:  Qr correspondente as 17:50:00
+20/08/19 - 17:54:28  Evento:  Horario atual no CMM 17:54:28
+20/08/19 - 17:54:28  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:54:28  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:54:28  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:54:31  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:56:10  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 17:56:10  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+20/08/19 - 17:56:46  Evento:  
+Dados lidos pelo leitor: 8887873961841 
+20/08/19 - 17:56:46  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 17:56:46  Evento:  Qr correspondente as 17:50:00
+20/08/19 - 17:56:46  Evento:  Horario atual no CMM 17:56:46
+20/08/19 - 17:56:46  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 17:56:47  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 17:56:47  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 17:56:49  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 17:59:51  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 17:59:52  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+20/08/19 - 18:00:05  Evento:  Dados lidos pelo leitor: 8887873961841 
+20/08/19 - 18:00:05  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 18:00:05  Evento:  Qr correspondente as 17:50:00
+20/08/19 - 18:00:05  Evento:  Horario atual no CMM 18:00:05
+20/08/19 - 18:00:09  Evento:  Fora do horario permitido
+20/08/19 - 18:00:10  Evento:  Dados lidos pelo leitor: 17936301551774 
+20/08/19 - 18:00:11  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 18:00:11  Evento:  Qr correspondente as 18:00:00
+20/08/19 - 18:00:11  Evento:  Horario atual no CMM 18:00:11
+20/08/19 - 18:00:11  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 18:00:12  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 18:00:12  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 18:00:14  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 18:01:41  Evento:  Dados lidos pelo leitor: 26536301551774 
+20/08/19 - 18:01:41  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 18:01:41  Evento:  Qr correspondente as 18:00:00
+20/08/19 - 18:01:41  Evento:  Horario atual no CMM 18:01:41
+20/08/19 - 18:01:41  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 18:01:42  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 18:01:42  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 18:01:44  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 18:02:15  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 18:02:15  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+
+20/08/19 - 18:02:30  Evento:  Dados lidos pelo leitor: 39236301551774 
+20/08/19 - 18:02:31  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 18:02:31  Evento:  Qr correspondente as 18:00:00
+20/08/19 - 18:02:31  Evento:  Horario atual no CMM 18:02:31
+20/08/19 - 18:02:31  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 18:02:31  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 18:02:31  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 18:02:34  Evento:  Abrindo portão Garagem Entrada
+
+20/08/19 - 18:02:44  Evento:  Dados lidos pelo leitor: 39236301551774 
+20/08/19 - 18:02:44  Evento:  valido de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 18:02:44  Evento:  Qr correspondente as 18:00:00
+20/08/19 - 18:02:44  Evento:  Horario atual no CMM 18:02:44
+20/08/19 - 18:02:44  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 18:02:45  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 18:02:45  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 18:02:47  Evento:  Abrindo portão Garagem Entrada
+20/08/19 - 18:04:08  Evento:  Instanciou a classe Qrcode
+
+20/08/19 - 18:04:09  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+
+20/08/19 - 18:04:44  Evento:  Dados lidos pelo leitor: 49336301551774 
+20/08/19 - 18:04:45  Evento:  Validade:  de 18/02/2019 até 29/12/2019 das 6:00:00 as 23:00:00hs
+20/08/19 - 18:04:45  Evento:  Qr correspondente as 18:00:00
+20/08/19 - 18:04:45  Evento:  Horario atual no CMM 18:04:45
+20/08/19 - 18:04:45  Evento:  Notificando Condfy, Cliente: 0054 ID 36966957
+20/08/19 - 18:04:46  Evento:  Resposta do Condfy: QR Code não encontrado
+20/08/19 - 18:04:46  Evento:  Acesso por qr code Garagem 1 Entrada
+20/08/19 - 18:04:48  Evento:  Abrindo portão Garagem Entrada

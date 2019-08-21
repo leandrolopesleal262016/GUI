@@ -1,4 +1,5 @@
 <?php
+
 $server = 'localhost';
 $host = 'leandro';
 $senha = '5510';

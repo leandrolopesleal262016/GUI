@@ -23,276 +23,201 @@ $saida = $saidas->fetch_array(MYSQLI_ASSOC);
 function escolheOpcao1 ($opcao1) 
 {
 	echo '<option selected value="">--- nenhuma ---</option>';
-	if ($opcao1 == 'IN1') {
-		echo '<option selected value="IN1">IN1</option>';
+	if ($opcao1 == 'pm_social_externo') {
+		echo '<option selected value="pm_social_externo">PM Social Externo</option>';
 	} else {
-		echo '<option value="IN1">IN1</option>';
+		echo '<option value="pm_social_externo">PM Social Externo</option>';
 	}
 
-	if ($opcao1 == 'IN2') {
-		echo '<option selected value="IN2">IN2</option>';
+	if ($opcao1 == 'pm_social_interno') {
+		echo '<option selected value="pm_social_interno">PM Social Interno</option>';
 	} else {
-		echo '<option value="IN2">IN2</option>';
+		echo '<option value="pm_social_interno">PM Social Interno</option>';
 	}
 
-	if ($opcao1 == 'IN3') {
-		echo '<option selected value="IN3">IN3</option>';
+	if ($opcao1 == 'abre_social_externo') {
+		echo '<option selected value="abre_social_externo">Abre Social Externo</option>';
 	} else {
-		echo '<option value="IN3">IN3</option>';
+		echo '<option value="abre_social_externo">Abre Social Externo</option>';
 	}
 
-	if ($opcao1 == 'IN4') {
-		echo '<option selected value="IN4">IN4</option>';
+	if ($opcao1 == 'abre_social_interno') {
+		echo '<option selected value="abre_social_interno">Abre Social Interno</option>';
 	} else {
-		echo '<option value="IN4">IN4</option>';
+		echo '<option value="abre_social_interno">Abre Social Interno</option>';
 	}
 
-	if ($opcao1 == 'IN5') {
-		echo '<option selected value="IN5">IN5</option>';
+	if ($opcao1 == 'botao_saida_social_externo') {
+		echo '<option selected value="botao_saida_social_externo">Botão saída Social Externo</option>';
 	} else {
-		echo '<option value="IN5">IN5</option>';
+		echo '<option value="botao_saida_social_externo">Botão saída Social Externo</option>';
 	}
 
-	if ($opcao1 == 'IN6') {
-		echo '<option selected value="IN6">IN6</option>';
+	if ($opcao1 == 'botao_saida_social_interno') {
+		echo '<option selected value="botao_saida_social_interno">Botão saída Social Interno</option>';
 	} else {
-		echo '<option value="IN6">IN6</option>';
+		echo '<option value="botao_saida_social_interno">Botão saída Social Interno</option>';
 	}
 
-	if ($opcao1 == 'IN7') {
-		echo '<option selected value="IN7">IN7</option>';
+	if ($opcao1 == 'quebra_vidro_interno_eclusa') {
+		echo '<option selected value="quebra_vidro_interno_eclusa">Quebra de vidro interior da eclusa</option>';
 	} else {
-		echo '<option value="IN7">IN7</option>';
+		echo '<option value="quebra_vidro_interno_eclusa">Quebra de vidro interior da eclusa</option>';
 	}
 	
-	if ($opcao1 == 'IN8') {
-		echo '<option selected value="IN8">IN8</option>';
+	if ($opcao1 == 'quebra_vidro_dentro_predio') {
+		echo '<option selected value="quebra_vidro_dentro_predio">Quebra de vidro dentro do prédio</option>';
 	} else {
-		echo '<option value="IN8">IN8</option>';
+		echo '<option value="quebra_vidro_dentro_predio">Quebra de vidro dentro do prédio</option>';
 	}
 
-	if ($opcao1 == 'A') {
-		echo '<option selected value="A">A</option>';
+	if ($opcao1 == 'chave_mudanca') {
+		echo '<option selected value="chave_mudanca">Chave de mudança</option>';
 	} else {
-		echo '<option value="A">A</option>';
+		echo '<option value="chave_mudanca">Chave de mudança</option>';
 	}
 
-	if ($opcao1 == 'B') {
-		echo '<option selected value="B">B</option>';
+	if ($opcao1 == 'queda_energia_eletrica') {
+		echo '<option selected value="queda_energia_eletrica">Queda de energia elétrica</option>';
 	} else {
-		echo '<option value="B">B</option>';
+		echo '<option value="queda_energia_eletrica">Queda de energia elétrica</option>';
 	}
 
-	if ($opcao1 == 'C') {
-		echo '<option selected value="C">C</option>';
+	if ($opcao1 == 'pm_quadro_comando') {
+		echo '<option selected value="pm_quadro_comando">PM Quadro de comando</option>';
 	} else {
-		echo '<option value="C">C</option>';
+		echo '<option value="pm_quadro_comando">PM Quadro de comando</option>';
 	}
 	
-	if ($opcao1 == 'D') {
-		echo '<option selected value="D">D</option>';
+	if ($opcao1 == 'alarme') {
+		echo '<option selected value="alarme">Alarme</option>';
 	} else {
-		echo '<option value="D">D</option>';
+		echo '<option value="alarme">Alarme</option>';
 	}
-}
-
-function escolheOpcao2 ($opcao2) 
-{
-	echo '<option selected value="">--- nenhuma ---</option>';
-	if ($opcao2 == 'OUT1') {
-		echo '<option selected value="OUT1">OUT1</option>';
+	if ($opcao1 == 'bloqueia_abre_social_externo') {
+		echo '<option selected value="bloqueia_abre_social_externo">Bloqueia Abre Social Externo</option>';
 	} else {
-		echo '<option value="OUT1">OUT1</option>';
+		echo '<option value="bloqueia_abre_social_externo">Bloqueia Abre Social Externo</option>';
 	}
 
-	if ($opcao2 == 'OUT2') {
-		echo '<option selected value="OUT2">OUT2</option>';
+	if ($opcao1 == 'bloqueia_abre_social_interno') {
+		echo '<option selected value="bloqueia_abre_social_interno">Bloqueia Abre Social Interno</option>';
 	} else {
-		echo '<option value="OUT2">OUT2</option>';
+		echo '<option value="bloqueia_abre_social_interno">Bloqueia Abre Social Interno</option>';
 	}
 
-	if ($opcao2 == 'OUT3') {
-		echo '<option selected value="OUT3">OUT3</option>';
+	if ($opcao1 == 'foto_sociais') {
+		echo '<option selected value="foto_sociais">Foto Sociais</option>';
 	} else {
-		echo '<option value="OUT3">OUT3</option>';
+		echo '<option value="foto_sociais">Foto Sociais</option>';
 	}
 
-	if ($opcao2 == 'OUT4') {
-		echo '<option selected value="OUT4">OUT4</option>';
+	if ($opcao1 == 'sirene_giroflex') {
+		echo '<option selected value="sirene_giroflex">Sirene / Giroflex</option>';
 	} else {
-		echo '<option value="OUT4">OUT4</option>';
+		echo '<option value="sirene_giroflex">Sirene / Giroflex</option>';
 	}
 
-	if ($opcao2 == 'OUT5') {
-		echo '<option selected value="OUT5">OUT5</option>';
+	if ($opcao1 == 'iluminacao_automatica_eclusa') {
+		echo '<option selected value="iluminacao_automatica_eclusa">Iluminação automática Eclusa</option>';
 	} else {
-		echo '<option value="OUT5">OUT5</option>';
+		echo '<option value="iluminacao_automatica_eclusa">Iluminação automática Eclusa</option>';
 	}
 
-	if ($opcao2 == 'OUT6') {
-		echo '<option selected value="OUT6">OUT6</option>';
+	if ($opcao1 == 'exaustor_1') {
+		echo '<option selected value="exaustor_1">Exaustor 1</option>';
 	} else {
-		echo '<option value="OUT6">OUT6</option>';
+		echo '<option value="exaustor_1">Exaustor 1</option>';
 	}
 
-	if ($opcao2 == 'OUT7') {
-		echo '<option selected value="OUT7">OUT7</option>';
+	if ($opcao1 == 'exaustor_2') {
+		echo '<option selected value="exaustor_2">Exaustor 2</option>';
 	} else {
-		echo '<option value="OUT7">OUT7</option>';
+		echo '<option value="exaustor_2">Exaustor 2</option>';
 	}
 	
-	if ($opcao2 == 'OUT8') {
-		echo '<option selected value="OUT8">OUT8</option>';
+	if ($opcao1 == 'iluminacao_1') {
+		echo '<option selected value="iluminacao_1">Iluminação 1</option>';
 	} else {
-		echo '<option value="OUT8">OUT8</option>';
+		echo '<option value="iluminacao_1">Iluminação 1</option>';
 	}
 
-	if ($opcao2 == 'OUT9') {
-		echo '<option selected value="OUT9">OUT9</option>';
+	if ($opcao1 == 'iluminacao_2') {
+		echo '<option selected value="iluminacao_2">Iluminação 2</option>';
 	} else {
-		echo '<option value="OUT9">OUT9</option>';
+		echo '<option value="iluminacao_2">Iluminação 2</option>';
 	}
 
-	if ($opcao2 == 'OUT10') {
-		echo '<option selected value="OUT10">OUT10</option>';
+	if ($opcao1 == 'bomba_agua') {
+		echo '<option selected value="bomba_agua">Bomba d água</option>';
 	} else {
-		echo '<option value="OUT10">OUT10</option>';
+		echo '<option value="bomba_agua">Bomba d água</option>';
 	}
 
-	if ($opcao2 == 'OUT11') {
-		echo '<option selected value="OUT11">OUT11</option>';
+	if ($opcao1 == 'aux_1') {
+		echo '<option selected value="aux_1">AUX 1</option>';
 	} else {
-		echo '<option value="OUT11">OUT11</option>';
+		echo '<option value="aux_1">AUX 1</option>';
 	}
 	
-	if ($opcao2 == 'OUT12') {
-		echo '<option selected value="OUT12">OUT12</option>';
+	if ($opcao1 == 'aux_2') {
+		echo '<option selected value="aux_2">AUX 2</option>';
 	} else {
-		echo '<option value="OUT12">OUT12</option>';
+		echo '<option value="aux_2">AUX 2</option>';
 	}
 
-	if ($opcao2 == 'OUT13') {
-		echo '<option selected value="OUT13">OUT13</option>';
+	if ($opcao1 == 'aux_3') {
+		echo '<option selected value="aux_3">AUX 3</option>';
 	} else {
-		echo '<option value="OUT13">OUT13</option>';
-	}
-
-	if ($opcao2 == 'OUT14') {
-		echo '<option selected value="OUT14">OUT14</option>';
-	} else {
-		echo '<option value="OUT14">OUT14</option>';
-	}
-
-	if ($opcao2 == 'OUT15') {
-		echo '<option selected value="OUT15">OUT15</option>';
-	} else {
-		echo '<option value="OUT15">OUT15</option>';
+		echo '<option value="aux_3">AUX 3</option>';
 	}
 	
-	if ($opcao2 == 'OUT16') {
-		echo '<option selected value="OUT16">OUT16</option>';
+	if ($opcao1 == 'aux_4') {
+		echo '<option selected value="aux_4">AUX 4</option>';
 	} else {
-		echo '<option value="OUT16">OUT16</option>';
-	}
-}
-
-function escolheOpcao3 ($opcao3) 
-{
-	echo '<option selected value="">--- nenhuma ---</option>';
-	if ($opcao3 == 'MDL1') {
-		echo '<option selected value="MDL1">EXPANSOR 1</option>';
-	} else {
-		echo '<option value="MDL1">EXPANSOR 1</option>';
+		echo '<option value="aux_4">AUX 4</option>';
 	}
 
-	if ($opcao3 == 'MDL2') {
-		echo '<option selected value="MDL2">EXPANSOR 2</option>';
+	if ($opcao1 == 'saudacao') {
+		echo '<option selected value="saudacao">Saudação</option>';
 	} else {
-		echo '<option value="MDL2">EXPANSOR 2</option>';
-	}
-	
-	if ($opcao3 == 'MDL3') {
-		echo '<option selected value="MDL3">EXPANSOR 3</option>';
-	} else {
-		echo '<option value="MDL3">EXPANSOR 3</option>';
+		echo '<option value="saudacao">Saudação</option>';
 	}
 
-	if ($opcao3 == 'MDL4') {
-		echo '<option selected value="MDL4">EXPANSOR 4</option>';
+	if ($opcao1 == 'garagem_terreo') {
+		echo '<option selected value="garagem_terreo">Garagem Terreo</option>';
 	} else {
-		echo '<option value="MDL4">EXPANSOR 4</option>';
-	}
-	
-	if ($opcao3 == 'MDL5') {
-		echo '<option selected value="MDL5">EXPANSOR 5</option>';
-	} else {
-		echo '<option value="MDL5">EXPANSOR 5</option>';
+		echo '<option value="garagem_terreo">Garagem Terreo</option>';
 	}
 
-	if ($opcao3 == 'MDL6') {
-		echo '<option selected value="MDL6">EXPANSOR 6</option>';
+	if ($opcao1 == 'gar_subsolo_1') {
+		echo '<option selected value="gar_subsolo_1">Gar. Subsolo 1</option>';
 	} else {
-		echo '<option value="MDL6">EXPANSOR 6</option>';
+		echo '<option value="gar_subsolo_1">Gar. Subsolo 1</option>';
 	}
 
-	if ($opcao3 == 'MDL7') {
-		echo '<option selected value="MDL7">EXPANSOR 7</option>';
+	if ($opcao1 == 'gar_subsolo_2') {
+		echo '<option selected value="gar_subsolo_2">Gar. Subsolo 2</option>';
 	} else {
-		echo '<option value="MDL7">EXPANSOR 7</option>';
+		echo '<option value="gar_subsolo_2">Gar. Subsolo 2</option>';
 	}
 
-	if ($opcao3 == 'MDL8') {
-		echo '<option selected value="MDL8">EXPANSOR 8</option>';
+	if ($opcao1 == 'gar_subsolo_3') {
+		echo '<option selected value="gar_subsolo_3">Gar. Subsolo 3</option>';
 	} else {
-		echo '<option value="MDL8">EXPANSOR 8</option>';
+		echo '<option value="gar_subsolo_3">Gar. Subsolo 3</option>';
 	}
 
-	if ($opcao3 == 'MDL9') {
-		echo '<option selected value="MDL9">EXPANSOR 9</option>';
+	if ($opcao1 == 'portal_acesso_1') {
+		echo '<option selected value="portal_acesso_1">Portão Acesso 1</option>';
 	} else {
-		echo '<option value="MDL9">EXPANSOR 9</option>';
+		echo '<option value="portal_acesso_1">Portão Acesso 1</option>';
 	}
 
-	if ($opcao3 == 'MDL10') {
-		echo '<option selected value="MDL10">EXPANSOR 10</option>';
+	if ($opcao1 == 'portal_acesso_2') {
+		echo '<option selected value="portal_acesso_2">Portão Acesso 2</option>';
 	} else {
-		echo '<option value="MDL10">EXPANSOR 10</option>';
-	}
-
-	if ($opcao3 == 'MDL11') {
-		echo '<option selected value="MDL11">EXPANSOR 11</option>';
-	} else {
-		echo '<option value="MDL11">EXPANSOR 11</option>';
-	}
-
-	if ($opcao3 == 'MDL12') {
-		echo '<option selected value="MDL12">EXPANSOR 12</option>';
-	} else {
-		echo '<option value="MDL12">EXPANSOR 12</option>';
-	}
-	
-	if ($opcao3 == 'MDL13') {
-		echo '<option selected value="MDL13">EXPANSOR 13</option>';
-	} else {
-		echo '<option value="MDL13">EXPANSOR 13</option>';
-	}
-
-	if ($opcao3 == 'MDL14') {
-		echo '<option selected value="MDL14">EXPANSOR 14</option>';
-	} else {
-		echo '<option value="MDL14">EXPANSOR 14</option>';
-	}
-
-	if ($opcao3 == 'MDL15') {
-		echo '<option selected value="MDL15">EXPANSOR 15</option>';
-	} else {
-		echo '<option value="MDL15">EXPANSOR 15</option>';
-	}
-
-	if ($opcao3 == 'MDL16') {
-		echo '<option selected value="MDL16">EXPANSOR 16</option>';
-	} else {
-		echo '<option value="MDL16">EXPANSOR 16</option>';
+		echo '<option value="portal_acesso_2">Portão Acesso 2</option>';
 	}
 }
 
@@ -342,37 +267,29 @@ function escolheOpcao3 ($opcao3)
                 <h2>Leandro Leal</h2>
               </div>
             </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-			
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+        
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
 				
 				<ul class="nav side-menu">
 				
-		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
+		    <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="monitor.html">Monitor I/O</a></li>					  
-		            </ul>
+                      <li><a href="monitor.php">Monitor I/O</a></li>
+		      <li><a href="log.php">Log CMM</a></li>
+		      <li><a href="log_qrcode.php">Log QR Code</a></li>					  
+		     </ul>
                   </li>	
                                 
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="io.php">CMM I/O</a></li>	
-		              <li><a href="setup.php">CMM Setup</a></li>				  
-		            </ul>
+                      <li><a href="io.php">CMM I/O</a></li>
+		      <li><a href="qrcode.php">QR Code</a></li>                     				  
+		     </ul>
                   </li>					  
 			
-		           <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">				                                              
-		              <li><a href="qrcode.php">QR Code Setup</a></li>				  
-		            </ul>
-                  </li>	
-	                   
+		    	                   
                   <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>					  
@@ -384,8 +301,8 @@ function escolheOpcao3 ($opcao3)
                       <li><a href="manual_CMM.html">CMM</a></li>
 		              <li><a href="manual_QR.html">QR Code</a></li>					  
 		            </ul>
-                  </li>
-				
+                  </li>			
+                   
                 </ul>
               </div>
             </div>
@@ -446,81 +363,71 @@ function escolheOpcao3 ($opcao3)
 					
                   </div>
 				  
+				  
                       <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2",title="Algo aqui"><a title="Ponto Magnético - NF - Normalmente Fechado"><h2>PM Social Externo</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN1</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
+                          <select class="select_group form-control" id="in1" name="in1">                            
 							<?php
-							escolheOpcao1($entrada['pm_social']);
+							escolheOpcao1($entrada['in1']);
 							?>
                           </select>
                         </div>
                       </div>					  
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Contato NA que vai para o abre da placa do portão"><h2>Abre Social Externo</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-1">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida">                            
-                            
-						  <?php
-			
-							escolheOpcao2($saida['abre_social']);
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 1</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="exp1" name="exp1">                            
+							<?php
+							escolheOpcao1($entrada['exp1']);
 							?>
-                            
                           </select>
                         </div>
-					  </div> 
+                      </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de saida auxiliar"><h2>AUX 1</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 13</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="aux_1_saida" name="aux_1_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['aux_1']);
+                          <select class="select_group form-control" id="exp13" name="exp13">                            
+							<?php
+							escolheOpcao1($entrada['exp13']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
 					<div class="clearfix"></div>
 					
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Ponto Magnético - NF - Normalmente Fechado"><h2>PM Social Interno</h2></a></label></center>
+					<div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN2</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="pm_eclusa_entrada" name="pm_eclusa_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['pm_eclusa']);
+                          <select class="select_group form-control" id="in2" name="in2">                            
+							<?php
+							escolheOpcao1($entrada['in2']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Contato NA que vai para o abre da placa do portão"><h2>Abre Social Interno</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 2</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_eclusa_saida" name="abre_eclusa_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['abre_eclusa']);
+                          <select class="select_group form-control" id="exp2" name="exp2">                            
+							<?php
+							escolheOpcao1($entrada['exp2']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de saida auxiliar"><h2>AUX 2</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 14</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="aux_2_saida" name="aux_2_saida">
-						  
-						  <?php
-							escolheOpcao2($saida['aux_2']);
+                          <select class="select_group form-control" id="exp14" name="exp14">                            
+							<?php
+							escolheOpcao1($entrada['exp14']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
@@ -528,40 +435,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>
 					  	
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Contato NA que vem do CTW para o abrir o Social Externo"><h2>Abre Social Externo</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN3</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_entrada" name="abre_social_entrada"> 
-
-						  <?php
-							escolheOpcao1($entrada['abre_social']);
+                          <select class="select_group form-control" id="in3" name="in3">                            
+							<?php
+							escolheOpcao1($entrada['in3']);
 							?>
-                            
+                          </select>
+                        </div>
+                      </div>
+					  
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 3</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="exp3" name="exp3">                            
+							<?php
+							escolheOpcao1($entrada['exp3']);
+							?>
                           </select>
                         </div>
                       </div>
 					  
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Usar o contato que vai para o abre do Social Externo no NF deste rele"><h2>Bloqueia Abre Social Externo</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 15</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="bloqueia_social_saida" name="bloqueia_social_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['bloqueia_social']);
+                          <select class="select_group form-control" id="exp15" name="exp15">                            
+							<?php
+							escolheOpcao1($entrada['exp15']);
 							?>
-                            
-                          </select>
-                        </div>
-                      </div>
-					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de saida auxiliar"><h2>AUX 3</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="aux_3_saida" name="aux_3_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['aux_3']);
-							?>
-                            
                           </select>
                         </div>
                       </div>
@@ -569,40 +470,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>	
 					
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Contato NA que vem do CTW para o abrir o Social Interno"><h2>Abre Social Interno</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN4</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_eclusa_entrada" name="abre_eclusa_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['abre_eclusa']);
+                          <select class="select_group form-control" id="in4" name="in4">                            
+							<?php
+							escolheOpcao1($entrada['in4']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Usar o contato que vai para o abre do Social interno no NF deste rele"><h2>Bloqueia Abre Social Interno</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 4</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="bloqueia_eclusa_saida" name="bloqueia_eclusa_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['bloqueia_eclusa']);
+                          <select class="select_group form-control" id="exp4" name="exp4">                            
+							<?php
+							escolheOpcao1($entrada['exp4']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de saida auxiliar"><h2>AUX 4</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 16</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="aux_4_saida" name="aux_4_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['aux_4']);
+                          <select class="select_group form-control" id="exp16" name="exp16">                            
+							<?php
+							escolheOpcao1($entrada['exp16']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
@@ -610,51 +505,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>
 					
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Botão saída Social Externo</h2></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN5</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="btn_social_entrada" name="btn_social_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['btn_social']);
-							?>
-                            
-                          </select>
-                        </div>
-                      </div>
-					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Contato NA que vai para o 'Foto' dos Sociais Interno e Externo, para mante-los abertos"><h2>Foto Sociais</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="foto_saida" name="foto_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['foto']);
-							?>
-                            
-                          </select>
-                        </div>
-                      </div>
-					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Mensagens de saudação: Bom dia, Boa tarde e Boa noite"><h2>Saudação</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="sauda_entrada" name="sauda_entrada">                            
-
-
+                          <select class="select_group form-control" id="in5" name="in5">                            
 							<?php
-							if ($entrada['sauda'] == 'OFF') {
-								echo '<option selected value="OFF">desativado</option>';
-							} else {
-								echo '<option value="OFF">desativado</option>';
-							}
-							if ($entrada['sauda'] == 'ON') {
-								echo '<option selected value="ON">ativado</option>';
-							} else {
-								echo '<option value="ON">ativado</option>';
-							}
+							escolheOpcao1($entrada['in5']);
 							?>
-							
-                            
+                          </select>
+                        </div>
+                      </div>
+					  
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 5</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="exp5" name="exp5">                            
+							<?php
+							escolheOpcao1($entrada['exp5']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+					  
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 1</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out1" name="out1">                            
+							<?php
+							escolheOpcao1($saida['out1']);
+							?>
                           </select>
                         </div>
                       </div>
@@ -662,42 +540,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>	
 					
 					  <div class="form-group">
-                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Botão saída Social Interno</h2></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN6</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="btn_eclusa_entrada" name="btn_eclusa_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['btn_eclusa']);
+                          <select class="select_group form-control" id="in6" name="in6">                            
+							<?php
+							escolheOpcao1($entrada['in6']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Este rele aciona por 10 segundos sempre que há uma violação"><h2>Sirene / Giroflex</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 6</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="sirene_saida" name="sirene_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['sirene']);
+                          <select class="select_group form-control" id="exp6" name="exp6">                            
+							<?php
+							escolheOpcao1($entrada['exp6']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					   <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Modulo expansor com endereço configurado no dip switch, para mais detalhes acesse o manual"><h2>Garagem Terreo</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 2</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="garagem_terreo_saida" name="garagem_terreo_saida">                            
-                              
-						  <?php
-							escolheOpcao3($saida['garagem_terreo']);
+                          <select class="select_group form-control" id="out2" name="out2">                            
+							<?php
+							escolheOpcao1($saida['out2']);
 							?>
-							
-							
-                            
                           </select>
                         </div>
                       </div>
@@ -705,42 +575,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>					  
 					  	
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Esta entrada somente envia evento, não abre os portões"><h2>Quebra de vidro interior da eclusa</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN7</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="qbv_comunica_entrada" name="qbv_comunica_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['qbv_comunica']);
+                          <select class="select_group form-control" id="in7" name="in7">                            
+							<?php
+							escolheOpcao1($entrada['in7']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Aciona o rele durante 20 segundos quando um dos 2 portões abre"><h2>Iluminação automática Eclusa</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 7</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="luz_automatica_saida" name="luz_automatica_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['luz_automatica']);
+                          <select class="select_group form-control" id="exp7" name="exp7">                            
+							<?php
+							escolheOpcao1($entrada['exp7']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Modulo expansor com endereço configurado no dip switch, para mais detalhes acesse o manual"><h2>Gar. Subsolo 1</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 3</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="garagem_sub_1_saida" name="garagem_sub_1_saida">                            
-                              
-						  <?php
-							escolheOpcao3($saida['garagem_sub_1']);
+                          <select class="select_group form-control" id="out3" name="out3">                            
+							<?php
+							escolheOpcao1($saida['out3']);
 							?>
-							
-							
-                            
                           </select>
                         </div>
                       </div>
@@ -748,83 +610,69 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>
 					  	
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Esta entrada envia evento e abre os portões"><h2>Quebra de vidro dentro do prédio</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>IN8</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="qbv_abre_entrada" name="qbv_abre_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['qbv_abre']);
+                          <select class="select_group form-control" id="in8" name="in8">                            
+							<?php
+							escolheOpcao1($entrada['in8']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Para acionamento manual de exaustor - Obs. Usar esta saída para comutar uma contatora."><h2>Exaustor 1</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 8</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="exaustor_1_saida" name="exaustor_1_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['exaustor_1']);
+                          <select class="select_group form-control" id="exp8" name="exp8">                            
+							<?php
+							escolheOpcao1($entrada['exp8']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Modulo expansor com endereço configurado no dip switch, para mais detalhes acesse o manual"><h2>Gar. Subsolo 2</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 4</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="garagem_sub_2_saida" name="garagem_sub_2_saida">                            
-                              
-						  <?php
-							escolheOpcao3($saida['garagem_sub_2']);
+                          <select class="select_group form-control" id="out4" name="out4">                            
+							<?php
+							escolheOpcao1($saida['out4']);
 							?>
-							
-							
-                            
                           </select>
                         </div>
                       </div>
 					  
 					  <div class="clearfix"></div>
 					
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Abre e mantem os portões abertos enquanto estiver acionada, pulsa no Abre e mantem o 'Foto Sociais' acionado "><h2>Chave de mudança</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>A</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="chave_mud_entrada" name="chave_mud_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['chave_mud']);
+                          <select class="select_group form-control" id="a" name="a">                            
+							<?php
+							escolheOpcao1($entrada['a']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de exaustor - Obs. Usar esta saída para comutar uma contatora."><h2>Exaustor 2</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 9</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control"  id="exaustor_2_saida" name="exaustor_2_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['exaustor_2']);
+                          <select class="select_group form-control" id="exp9" name="exp9">                            
+							<?php
+							escolheOpcao1($entrada['exp9']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Modulo expansor com endereço configurado no dip switch, para mais detalhes acesse o manual"><h2>Gar. Subsolo 3</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 5</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="garagem_sub_3_saida" name="garagem_sub_3_saida">                            
-                              
-						  <?php
-							escolheOpcao3($saida['garagem_sub_3']);
+                          <select class="select_group form-control" id="out5" name="out5">                            
+							<?php
+							escolheOpcao1($saida['out5']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
@@ -834,40 +682,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>
 					
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Esta entrada quando acionada durante pelo menos 5 segundos envia evento de queda de energia"><h2>Queda de energia elétrica</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>B</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="qde_entrada" name="qde_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['qde']);
+                          <select class="select_group form-control" id="b" name="b">                            
+							<?php
+							escolheOpcao1($entrada['b']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de iluminação - Obs. Usar esta saída para comutar uma contatora."><h2>Iluminação 1</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 10</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="luz_1_saida" name="luz_1_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['luz_1']);
+                          <select class="select_group form-control" id="exp10" name="exp10">                            
+							<?php
+							escolheOpcao1($entrada['exp10']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					   <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Modulo expansor com endereço configurado no dip switch, para mais detalhes acesse o manual"><h2>Portão Acesso 1</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 6</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="portal_acesso_1_saida" name="portal_acesso_1_saida">                            
-                              
-						  <?php
-							escolheOpcao3($saida['portal_acesso_1']);
+                          <select class="select_group form-control" id="out6" name="out6">                            
+							<?php
+							escolheOpcao1($saida['out6']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
@@ -875,40 +717,34 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>
 					  
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Esta entrada envia evento quando o ponto magnético está aberto e restaura quando está fechado"><h2>PM Quadro de comando</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>C</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="pm_quadro_entrada" name="pm_quadro_entrada">                            
-                            
-						  <?php
-							escolheOpcao1($entrada['pm_quadro']);
+                          <select class="select_group form-control" id="c" name="c">                            
+							<?php
+							escolheOpcao1($entrada['c']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de iluminação - Obs. Usar esta saída para comutar uma contatora."><h2>Iluminação 2</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 11</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="luz_2_saida" name="luz_2_saida">                            
-                            
-						  <?php
-							escolheOpcao2($saida['luz_2']);
+                          <select class="select_group form-control" id="exp11" name="exp11">                            
+							<?php
+							escolheOpcao1($entrada['exp11']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					   <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Modulo expansor com endereço configurado no dip switch, para mais detalhes acesse o manual"><h2>Portão Acesso 2</h2></a></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 7</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="portal_acesso_2_saida" name="portal_acesso_2_saida">                            
-                              
-						  <?php
-							escolheOpcao3($saida['portal_acesso_2']);
+                          <select class="select_group form-control" id="out7" name="out7">                            
+							<?php
+							escolheOpcao1($saida['out7']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
@@ -916,27 +752,131 @@ function escolheOpcao3 ($opcao3)
 					  <div class="clearfix"></div>
 					  
 					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Envia um disparo de alarme quando fechado, restaura quando aberto"><h2>Alarme</h2></a></label></center>
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>D</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="alarme_entrada" name="alarme_entrada">                              
-                            
-						  <?php
-							escolheOpcao1($entrada['alarme']);
+                          <select class="select_group form-control" id="d" name="d">                            
+							<?php
+							escolheOpcao1($entrada['d']);
 							?>
-                            
                           </select>
                         </div>
                       </div>
 					  
-					  <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Acionamento manual de bomba d' água - Obs. Usar esta saída para comutar uma contatora."><h2>Bomba d' água</h2></label></center>
+                      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>EXPANSOR 12</h2></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="bomba_saida" name="bomba_saida">                            
-                             
-						  <?php
-							escolheOpcao2($saida['bomba']);
+                          <select class="select_group form-control" id="exp12" name="exp12">                            
+							<?php
+							escolheOpcao1($entrada['exp12']);
 							?>
-                            
+                          </select>
+                        </div>
+                      </div>
+
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 8</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out8" name="out8">                            
+							<?php
+							escolheOpcao1($saida['out8']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  <div class="clearfix"></div>
+
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 9</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out9" name="out9">                            
+							<?php
+							escolheOpcao1($saida['out9']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 10</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out10" name="out10">                            
+							<?php
+							escolheOpcao1($saida['out10']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 11</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out11" name="out11">                            
+							<?php
+							escolheOpcao1($saida['out11']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  <div class="clearfix"></div>
+
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 12</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out12" name="out12">                            
+							<?php
+							escolheOpcao1($saida['out12']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 13</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out13" name="out13">                            
+							<?php
+							escolheOpcao1($saida['out13']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 14</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out14" name="out14">                            
+							<?php
+							escolheOpcao1($saida['out14']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  <div class="clearfix"></div>
+
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 15</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out15" name="out15">                            
+							<?php
+							escolheOpcao1($saida['out15']);
+							?>
+                          </select>
+                        </div>
+                      </div>
+
+					  
+					  <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>OUT 16</h2></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select_group form-control" id="out16" name="out16">                            
+							<?php
+							escolheOpcao1($saida['out16']);
+							?>
                           </select>
                         </div>
                       </div>

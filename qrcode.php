@@ -5,6 +5,7 @@ $host = 'leandro';
 $senha = '5510';
 $bd = 'CMM';
 
+
 $mysqli = new mysqli($server, $host, $senha, $bd);
 
 if(mysqli_connect_errno()){
@@ -12,13 +13,85 @@ if(mysqli_connect_errno()){
 	exit();
 }
 
-$sql = "SELECT * FROM entradas ORDER BY id DESC LIMIT 1";
-$leitores = $mysqli->query($sql);
-$leitores = $leitores->fetch_array(MYSQLI_ASSOC);
+$sql = "SELECT * FROM leitores_qrcode ORDER BY id DESC LIMIT 1";
+$qrcode = $mysqli->query($sql);
+$qrcode = $qrcode->fetch_array(MYSQLI_ASSOC);
 
-$sql = "SELECT * FROM saidas ORDER BY id DESC LIMIT 1";
-$saidas = $mysqli->query($sql);
-$saida = $saidas->fetch_array(MYSQLI_ASSOC);
+function escolheOpcao1 ($opcao1) 
+{
+	echo '<option selected value="">--- nenhuma ---</option>';
+	if ($opcao1 == 'IN1') {
+		echo '<option selected value="IN1">IN1</option>';
+	} else {
+		echo '<option value="IN1">IN1</option>';
+	}
+
+	if ($opcao1 == 'IN2') {
+		echo '<option selected value="IN2">IN2</option>';
+	} else {
+		echo '<option value="IN2">IN2</option>';
+	}
+
+	if ($opcao1 == 'IN3') {
+		echo '<option selected value="IN3">IN3</option>';
+	} else {
+		echo '<option value="IN3">IN3</option>';
+	}
+
+	if ($opcao1 == 'IN4') {
+		echo '<option selected value="IN4">IN4</option>';
+	} else {
+		echo '<option value="IN4">IN4</option>';
+	}
+
+	if ($opcao1 == 'IN5') {
+		echo '<option selected value="IN5">IN5</option>';
+	} else {
+		echo '<option value="IN5">IN5</option>';
+	}
+
+	if ($opcao1 == 'IN6') {
+		echo '<option selected value="IN6">IN6</option>';
+	} else {
+		echo '<option value="IN6">IN6</option>';
+	}
+
+	if ($opcao1 == 'IN7') {
+		echo '<option selected value="IN7">IN7</option>';
+	} else {
+		echo '<option value="IN7">IN7</option>';
+	}
+	
+	if ($opcao1 == 'IN8') {
+		echo '<option selected value="IN8">IN8</option>';
+	} else {
+		echo '<option value="IN8">IN8</option>';
+	}
+
+	if ($opcao1 == 'A') {
+		echo '<option selected value="A">A</option>';
+	} else {
+		echo '<option value="A">A</option>';
+	}
+
+	if ($opcao1 == 'B') {
+		echo '<option selected value="B">B</option>';
+	} else {
+		echo '<option value="B">B</option>';
+	}
+
+	if ($opcao1 == 'C') {
+		echo '<option selected value="C">C</option>';
+	} else {
+		echo '<option value="C">C</option>';
+	}
+	
+	if ($opcao1 == 'D') {
+		echo '<option selected value="D">D</option>';
+	} else {
+		echo '<option value="D">D</option>';
+	}
+}
 
 function escolheOpcao2 ($opcao2) 
 {
@@ -120,85 +193,23 @@ function escolheOpcao2 ($opcao2)
 	}
 }
 
-
-
-function escolheOpcao1 ($opcao1) 
+function escolheOpcao3 ($opcao3) 
 {
-	echo '<option selected value="">--- nenhuma ---</option>';
-	if ($opcao1 == 'IN1') {
-		echo '<option selected value="IN1">IN1</option>';
-	} else {
-		echo '<option value="IN1">IN1</option>';
-	}
-
-	if ($opcao1 == 'IN2') {
-		echo '<option selected value="IN2">IN2</option>';
-	} else {
-		echo '<option value="IN2">IN2</option>';
-	}
-
-	if ($opcao1 == 'IN3') {
-		echo '<option selected value="IN3">IN3</option>';
-	} else {
-		echo '<option value="IN3">IN3</option>';
-	}
-
-	if ($opcao1 == 'IN4') {
-		echo '<option selected value="IN4">IN4</option>';
-	} else {
-		echo '<option value="IN4">IN4</option>';
-	}
-
-	if ($opcao1 == 'IN5') {
-		echo '<option selected value="IN5">IN5</option>';
-	} else {
-		echo '<option value="IN5">IN5</option>';
-	}
-
-	if ($opcao1 == 'IN6') {
-		echo '<option selected value="IN6">IN6</option>';
-	} else {
-		echo '<option value="IN6">IN6</option>';
-	}
-
-	if ($opcao1 == 'IN7') {
-		echo '<option selected value="IN7">IN7</option>';
-	} else {
-		echo '<option value="IN7">IN7</option>';
-	}
-	
-	if ($opcao1 == 'IN8') {
-		echo '<option selected value="IN8">IN8</option>';
-	} else {
-		echo '<option value="IN8">IN8</option>';
-	}
-
-	if ($opcao1 == 'A') {
-		echo '<option selected value="A">A</option>';
-	} else {
-		echo '<option value="A">A</option>';
-	}
-
-	if ($opcao1 == 'B') {
-		echo '<option selected value="B">B</option>';
-	} else {
-		echo '<option value="B">B</option>';
-	}
-
-	if ($opcao1 == 'C') {
-		echo '<option selected value="C">C</option>';
-	} else {
-		echo '<option value="C">C</option>';
-	}
-	
-	if ($opcao1 == 'D') {
-		echo '<option selected value="D">D</option>';
-	} else {
-		echo '<option value="D">D</option>';
-	}
+  echo '<option selected value="">--- nenhuma ---</option>';
+  $path = "arquivos/";
+  $diretorio = dir($path);
+  while($arquivo = $diretorio -> read()){
+    if ($arquivo == '.' || $arquivo == '..') {
+      continue;
+    }
+    if ($opcao3 == $arquivo) {
+      echo "<option selected value=".$arquivo.">".$arquivo."</option>";
+    } else {
+      echo "<option value=".$arquivo.">".$arquivo."</option>";
+    }
+  }
+  $diretorio -> close();
 }
-
-
 
 ?>
 
@@ -246,36 +257,29 @@ function escolheOpcao1 ($opcao1)
                 <h2>Leandro Leal</h2>
               </div>
             </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+        
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
 				
 				<ul class="nav side-menu">
 				
-		          <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
+		    <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="monitor.html">Monitor I/O</a></li>					  
-		            </ul>
+                      <li><a href="monitor.php">Monitor I/O</a></li>
+		      <li><a href="log.php">Log CMM</a></li>
+		      <li><a href="log_qrcode.php">Log QR Code</a></li>					  
+		     </ul>
                   </li>	
                                 
                   <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
-                      <li><a href="io.php">CMM I/O</a></li>	
-		              <li><a href="setup.php">CMM Setup</a></li>				  
-		            </ul>
+                      <li><a href="io.php">CMM I/O</a></li>
+		      <li><a href="qrcode.php">QR Code</a></li>                     				  
+		     </ul>
                   </li>					  
 			
-		           <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">				                                              
-		              <li><a href="qrcode.php">QR Code Setup</a></li>				  
-		            </ul>
-                  </li>	
-	                   
+		    	                   
                   <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">				                        
                       <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>					  
@@ -287,7 +291,7 @@ function escolheOpcao1 ($opcao1)
                       <li><a href="manual_CMM.html">CMM</a></li>
 		              <li><a href="manual_QR.html">QR Code</a></li>					  
 		            </ul>
-                  </li>
+                  </li>			
                    
                 </ul>
               </div>
@@ -338,7 +342,7 @@ function escolheOpcao1 ($opcao1)
 				  
                   <div class="x_content">
 				  
-			<form method="post" action="setup_back_update.php">
+			<form method="post" action="qrcode_back_update.php">
 				
                     <form class="form-horizontal form-label-left">
 
@@ -353,15 +357,15 @@ function escolheOpcao1 ($opcao1)
                      <div class="form-group">                        
                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 1</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <input type="text" class="form-control" placeholder="IP leitor"/>
+                          <input type="text" class="form-control" id="leitor_1" name="leitor_1" value="<?=$qrcode["leitor_1"]?>" placeholder="IP leitor"/>
                         </div>
                      </div>	  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_1" name="portao_1"> 
+			  <?php	 escolheOpcao2($qrcode['portao_1']); ?>                            
                           </select>
                         </div>
 		      </div>
@@ -369,28 +373,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_1" name="mensagem_1"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_1']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 2</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 2</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_2" name="leitor_2" value="<?=$qrcode["leitor_2"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_2" name="portao_2"> 
+			  <?php	 escolheOpcao2($qrcode['portao_2']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -398,28 +401,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_2" name="mensagem_2"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_2']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 3</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 3</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_3" name="leitor_3" value="<?=$qrcode["leitor_3"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_3" name="portao_3"> 
+			  <?php	 escolheOpcao2($qrcode['portao_3']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -427,28 +429,54 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_3" name="mensagem_3"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_3']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 4</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 4</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_4" name="leitor_4" value="<?=$qrcode["leitor_4"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                      					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_4" name="portao_4"> 
+			  <?php	 escolheOpcao2($qrcode['portao_4']); ?>                            
+                          </select>
+                        </div>
+		      </div> 
+
+		      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem </h2></a></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select2_group form-control" id="mensagem_4" name="mensagem_4"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_4']); ?>                            
+                          </select>
+                        </div>
+		      </div> 
+
+		      <div class="clearfix"></div>
+
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 5</h2></a></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <input type="text" class="form-control" id="leitor_5" name="leitor_5" value="<?=$qrcode["leitor_5"]?>" placeholder="IP leitor"/>
+                        </div>
+                     </div>				  
+					  
+		      <div class="form-group">
+                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                          <select class="select2_group form-control" id="portao_5" name="portao_5"> 
+			  <?php	 escolheOpcao2($qrcode['portao_5']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -456,57 +484,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_5" name="mensagem_5"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_5']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 5</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 6</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_6" name="leitor_6" value="<?=$qrcode["leitor_6"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
-                          </select>
-                        </div>
-		      </div> 
-
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
-                          </select>
-                        </div>
-		      </div> 
-
-		      <div class="clearfix"></div>
-
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 6</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
-                        </div>
-                      					  
-					  
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_6" name="portao_6"> 
+			  <?php	 escolheOpcao2($qrcode['portao_6']); ?>                            
                           </select>
                         </div>
 		      </div>
@@ -514,28 +512,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_6" name="mensagem_6"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_6']); ?>                            
                           </select>
                         </div>
 		      </div>  
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 7</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 7</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_7" name="leitor_7" value="<?=$qrcode["leitor_7"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_7" name="portao_7"> 
+			  <?php	 escolheOpcao2($qrcode['portao_7']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -543,28 +540,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_7" name="mensagem_7"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_7']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 8</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 8</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_8" name="leitor_8" value="<?=$qrcode["leitor_8"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_8" name="portao_8"> 
+			  <?php	 escolheOpcao2($qrcode['portao_8']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -572,28 +568,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_8" name="mensagem_8"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_8']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 9</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 9</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_9" name="leitor_9" value="<?=$qrcode["leitor_9"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_9" name="portao_9"> 
+			  <?php	 escolheOpcao2($qrcode['portao_9']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -601,28 +596,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_9" name="mensagem_9"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_9']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 10</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 10</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_10" name="leitor_10" value="<?=$qrcode["leitor_10"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_10" name="portao_10"> 
+			  <?php	 escolheOpcao2($qrcode['portao_10']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -630,28 +624,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_10" name="mensagem_10"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_10']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 11</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 11</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_11" name="leitor_11" value="<?=$qrcode["leitor_11"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_11" name="portao_11"> 
+			  <?php	 escolheOpcao2($qrcode['portao_11']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -659,28 +652,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_11" name="mensagem_11"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_11']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 12</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 12</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_12" name="leitor_12" value="<?=$qrcode["leitor_12"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                      					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_12" name="portao_12"> 
+			  <?php	 escolheOpcao2($qrcode['portao_12']); ?>                            
                           </select>
                         </div>
 		      </div>
@@ -688,28 +680,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_12" name="mensagem_12"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_12']); ?>                            
                           </select>
                         </div>
 		      </div>  
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 13</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 13</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_13" name="leitor_13" value="<?=$qrcode["leitor_13"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_13" name="portao_13"> 
+			  <?php	 escolheOpcao2($qrcode['portao_13']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -717,28 +708,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_13" name="mensagem_13"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_13']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 14</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 14</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_14" name="leitor_14" value="<?=$qrcode["leitor_14"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                       					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_14" name="portao_14"> 
+			  <?php	 escolheOpcao2($qrcode['portao_14']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -746,28 +736,26 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_14" name="mensagem_14"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_14']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 15</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 15</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_15" name="leitor_15" value="<?=$qrcode["leitor_15"]?>" placeholder="IP leitor"/>
                         </div>
-                      					  
+                     </div>				  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_15" name="portao_15"> 
+			  <?php	 escolheOpcao2($qrcode['portao_15']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -775,28 +763,27 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_15" name="mensagem_15"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_15']); ?>                            
                           </select>
                         </div>
 		      </div> 
 
 		      <div class="clearfix"></div>
 
-		      <div class="form-group">
-                        <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Leitor 16</h2></a></label></center>
+		      <div class="form-group">                        
+                       <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><a title="Insira o IP do leitor Exemplo:  192.168.0.101"><h2>Leitor 16</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select_group form-control" id="pm_social_entrada" name="pm_social_entrada">                            
-			  <?php escolheOpcao1($leitores_qrcode['pm_social']); ?>
-                          </select>
+                          <input type="text" class="form-control" id="leitor_16" name="leitor_16" value="<?=$qrcode["leitor_16"]?>" placeholder="IP leitor"/>
                         </div>
+                     </div>	
                      					  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="portao_16" name="portao_16"> 
+			  <?php	 escolheOpcao2($qrcode['portao_16']); ?>                            
                           </select>
                         </div>
 		      </div> 	
@@ -804,8 +791,8 @@ function escolheOpcao1 ($opcao1)
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Mensagem</h2></a></label></center>
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                          <select class="select2_group form-control" id="abre_social_saida" name="abre_social_saida"> 
-			  <?php	 escolheOpcao2($saida['abre_social']); ?>                            
+                          <select class="select2_group form-control" id="mensagem_16" name="mensagem_16"> 
+			  <?php	 escolheOpcao3($qrcode['mensagem_16']); ?>                            
                           </select>
                         </div>
 		      </div> 
@@ -813,22 +800,6 @@ function escolheOpcao1 ($opcao1)
 		      <div class="clearfix"></div>
 		  
 		    </div> 
- 		   </div> 
-		  </div> 
- 		 </div>
-		</div> 
-	       </div> 
-	      </div> 
-	     </div>  
-	    </div> 
- 	   </div> 
-	  </div> 
-	 </div>  
-	</div> 
-       </div> 
-      </div> 
-     </div>      
-
 		</div>					  
 		<center><button type="submit" class="btn btn-success btn-lg">Salvar Alterações</button></center>	
 		</form>
