@@ -158,3 +158,51 @@ Dados lidos pelo leitor: 8887873961841
 20/08/19 - 18:04:46  Evento:  Resposta do Condfy: QR Code não encontrado
 20/08/19 - 18:04:46  Evento:  Acesso por qr code Garagem 1 Entrada
 20/08/19 - 18:04:48  Evento:  Abrindo portão Garagem Entrada
+21/08/19 - 09:08:55  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 09:08:56  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 09:10:34  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 09:10:35  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 09:12:34  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 09:12:36  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 10:50:34  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 10:50:35  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 10:53:31  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 10:53:31  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 10:56:14  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 10:56:15  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 11:08:55  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 11:08:56  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 11:11:55  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 11:11:56  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 11:16:17  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 11:16:18  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 11:21:21  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 11:21:22  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 11:25:37  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 11:25:38  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+
+21/08/19 - 11:28:17  Evento:  Instanciou a classe Qrcode
+
+21/08/19 - 11:28:18  Evento:  Conectado com Leitor QR Code  IP 172.20.9.5  porta  5001
+

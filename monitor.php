@@ -53,73 +53,65 @@ function escolheOpcao($opcao)
     </head>
 
     <body class="nav-md">
-        <div class="container body">
-            <div class="main_container">
-                <div class="col-md-3 left_col">
-                    <div class="left_col scroll-view">
-                        <div class="navbar nav_title" style="border: 0;">
-                            <a href="index.html" class="site_title"><i class="fa fa-globe"></i> <span>CEINTEL</span></a>
-                        </div>
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-globe"></i> <span>CEINTEL</span></a>
+            </div>
 
-                        <div class="clearfix"></div>
+            <div class="clearfix"></div>
 
-                        <!-- menu profile quick info -->
-                        <div class="profile clearfix">
-                            <div class="profile_pic">
-                                <img src="images/img2.jpg" alt="..." class="img-circle profile_img">
-                            </div>
-                            <div class="profile_info">
-                                <span>Bem vindo,</span>
-                                <h2>Leandro Leal</h2>
-                            </div>
-                        </div>
-                        <!-- /menu profile quick info -->
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img2.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bem vindo,</span>
+                <h2>Leandro Leal</h2>
+              </div>
+            </div>
+        
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+				
+				<ul class="nav side-menu">
+				
+		    <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">				                        
+                      <li><a href="monitor.php">Monitor I/O</a></li>
+		      <li><a href="log.php">Log CMM</a></li>
+		      <li><a href="log_qrcode.php">Log QR Code</a></li>					  
+		     </ul>
+                  </li>	
+                                
+                  <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">				                        
+                      <li><a href="io.php">CMM I/O</a></li>
+		      <li><a href="qrcode.php">QR Code</a></li>                     				  
+		     </ul>
+                  </li>					  
+			
+		    	                   
+                  <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">				                        
+                      <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>					  
+		            </ul>
+                  </li>
 
-                        <br />
-
-                        <!-- sidebar menu -->
-                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-                            <div class="menu_section">
-                                <h3>General</h3>
-
-                                <ul class="nav side-menu">
-
-                                    <li><a><i class="fa fa-desktop"></i> Monitor <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu">
-                                            <li><a href="monitor.php">Monitor I/O</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a><i class="fa fa-wrench"></i> Configurações <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu">
-                                            <li><a href="io.php">CMM I/O</a></li>
-                                            <li><a href="setup.php">CMM Setup</a></li>
-                                            <li><a href="log.php">Log</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a><i class="fa fa-qrcode"></i> QR Code <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu">
-                                            <li><a href="qrcode.php">QR Code Setup</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a><i class="fa fa-clone"></i> Diagramas <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu">
-                                            <li><a href="diagrama.html">Diagrama de ligação CMM</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a><i class="fa fa-folder-open"></i> Manuais <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu">
-                                            <li><a href="manual_CMM.html">CMM</a></li>
-                                            <li><a href="manual_QR.html">QR Code</a></li>
-                                            < </ul>
-                                    </li>
-
-                                    </ul>
-                            </div>
-                        </div>
+		          <li><a><i class="fa fa-folder-open"></i> Manuais <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">				                        
+                      <li><a href="manual_CMM.html">CMM</a></li>
+		              <li><a href="manual_QR.html">QR Code</a></li>					  
+		            </ul>
+                  </li>			
+                   
+                </ul>
+              </div>
+            </div>
                         <!-- /sidebar menu -->
 
                         <!-- /menu footer buttons -->
@@ -139,6 +131,7 @@ function escolheOpcao($opcao)
                             </a>
                         </div>
                         <!-- /menu footer buttons -->
+
                     </div>
                 </div>
 
@@ -155,178 +148,210 @@ function escolheOpcao($opcao)
 
                         <div class="clearfix"></div>
 
-                        <div class="row">
-                            <div class="col-md-16 col-sm-16 col-xs-16">
+                       <div class="container body">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="x_panel">
-                                    <div class="x_title">
-                                        <h2>Monitoramento das Entradas e Saídas CMM</h2>
-                                        <ul class="nav navbar-right panel_toolbox">
-                                        </ul>
-                                        <div class="clearfix"></div>
-                                    </div>
+                                    
 
                                     <div class="x_content">
                                         <form action="intertravamento.php" method="post">
                                             <div class="form-group">
                                                 <center>
-                                                    <label class="control-label col-md-2 col-sm-2 col-xs-2">
+                                                    <label class="control-label col-md-4 col-sm-4 col-xs-4">
                                                         <h2>Intertravamento </h2></label>
                                                 </center>
-                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
                                                     <select class="select_group form-control" id="habilitado" name="habilitado">
-                                                        <?php
-                                                        escolheOpcao($monitor['habilitado']);
-                                                        ?>
+                                                    <?php escolheOpcao($monitor['habilitado']);?>
                                                     </select>
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn btn-success">Atualizar</button>
                                         </form>
 
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-md-14 col-sm-14 col-xs-14">
 
                                             <style='position:relative; top:0px; left:0px;'>
-                                                <img src="images/monitor.jpeg" />
+                                            <img src="images/monitor.jpeg" />
 
-                                                <!-- leds out -->
+                                            <!-- leds out -->
 
-                                                <div style='position:absolute; top:91px; left:59px;'>
-                                                    <img src="images/led_ligado.jpeg" id="out1" name="out1" />
+                                            <div style='position:absolute; top:144px; left:54px;'>
+                                            <img src="images/led_ligado.jpeg" id="out1" name="out1" />
 
-                                                    <div style='position:absolute; top:0px; left:32px;'>
-                                                        <img src="images/led_ligado.jpeg" id="out2" name="out2" />
+                                            <div style='position:absolute; top:0px; left:32px;'>
+                                            <img src="images/led_ligado.jpeg" id="out2" name="out2" />
 
-                                                        <div style='position:absolute; top:0px; left:32px;'>
-                                                            <img src="images/led_ligado.jpeg" id="out3" name="out3" />
+                                            <div style='position:absolute; top:0px; left:32px;'>
+                                            <img src="images/led_ligado.jpeg" id="out3" name="out3" />
 
-                                                            <div style='position:absolute; top:0px; left:31px;'>
-                                                                <img src="images/led_ligado.jpeg" id="out4" name="out4" />
+                                            <div style='position:absolute; top:0px; left:31px;'>
+                                            <img src="images/led_ligado.jpeg" id="out4" name="out4" />
 
-                                                                <div style='position:absolute; top:0px; left:32px;'>
-                                                                    <img src="images/led_ligado.jpeg" id="out5" name="out5" />
+                                            <div style='position:absolute; top:0px; left:32px;'>
+                                            <img src="images/led_ligado.jpeg" id="out5" name="out5" />
 
-                                                                    <div style='position:absolute; top:0px; left:32px;'>
-                                                                        <img src="images/led_ligado.jpeg" id="out6" name="out6" />
+                                            <div style='position:absolute; top:0px; left:32px;'>
+                                            <img src="images/led_ligado.jpeg" id="out6" name="out6" />
 
-                                                                        <div style='position:absolute; top:0px; left:32px;'>
-                                                                            <img src="images/led_ligado.jpeg" id="out7" name="out7" />
+                                            <div style='position:absolute; top:0px; left:32px;'>
+                                            <img src="images/led_ligado.jpeg" id="out7" name="out7" />
 
-                                                                            <div style='position:absolute; top:0px; left:32px;'>
-                                                                                <img src="images/led_ligado.jpeg" id="out8" name="out8" />
+                                            <div style='position:absolute; top:0px; left:32px;'>
+                                            <img src="images/led_ligado.jpeg" id="out8" name="out8" />
 
-                                                                                <!-- leds out out1 - out8-->
-                                                                                <div style='position:absolute; top:-1px; left:78px;'>
-                                                                                    <img src="images/led_ligado.jpeg" id="out14" name="out14" />
+                                            <!-- leds out out1 - out8-->
 
-                                                                                    <div style='position:absolute; top:-14px; left:0px;'>
-                                                                                        <img src="images/led_ligado.jpeg" id="out13" name="out13" />
+                                            <div style='position:absolute; top:-1px; left:78px;'>
+                                            <img src="images/led_ligado.jpeg" id="out14" name="out14" />
 
-                                                                                        <div style='position:absolute; top:-14px; left:0px;'>
-                                                                                            <img src="images/led_ligado.jpeg" id="out12" name="out12" />
+                                            <div style='position:absolute; top:-14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out13" name="out13" />
 
-                                                                                            <div style='position:absolute; top:-14px; left:0px;'>
-                                                                                                <img src="images/led_ligado.jpeg" id="out11" name="out11" />
+                                            <div style='position:absolute; top:-14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out12" name="out12" />
 
-                                                                                                <div style='position:absolute; top:-14px; left:0px;'>
-                                                                                                    <img src="images/led_ligado.jpeg" id="out10" name="out10" />
+                                            <div style='position:absolute; top:-14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out11" name="out11" />
 
-                                                                                                    <div style='position:absolute; top:-14px; left:0px;'>
-                                                                                                        <img src="images/led_ligado.jpeg" id="out9" name="out9" />
+                                            <div style='position:absolute; top:-14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out10" name="out10" />
 
-                                                                                                        <div style='position:absolute; top:83px; left:0px;'>
-                                                                                                            <img src="images/led_ligado.jpeg" id="out15" name="out15" />
+                                            <div style='position:absolute; top:-14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out9" name="out9" />
 
-                                                                                                            <div style='position:absolute; top:14px; left:0px;'>
-                                                                                                                <img src="images/led_ligado.jpeg" id="out16" name="out16" />
+                                            <div style='position:absolute; top:83px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out15" name="out15" />
 
-                                                                                                                <!-- leds entradas IN8 - IN1 -->
+                                            <div style='position:absolute; top:14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="out16" name="out16" />
 
-                                                                                                                <div style='position:absolute; top:39px; left:0px;'>
-                                                                                                                    <img src="images/led_ligado.jpeg" id="in8" name="in8" />
+                                            <!-- leds entradas IN8 - IN1 -->
 
-                                                                                                                    <div style='position:absolute; top:14px; left:0px;'>
-                                                                                                                        <img src="images/led_ligado.jpeg" id="in7" name="in7" />
+                                            <div style='position:absolute; top:39px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in8" name="in8" />
 
-                                                                                                                        <div style='position:absolute; top:14px; left:0px;'>
-                                                                                                                            <img src="images/led_ligado.jpeg" id="in6" name="in6" />
+                                            <div style='position:absolute; top:14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in7" name="in7" />
 
-                                                                                                                            <div style='position:absolute; top:13px; left:0px;'>
-                                                                                                                                <img src="images/led_ligado.jpeg" id="in5" name="in5" />
+                                            <div style='position:absolute; top:14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in6" name="in6" />
 
-                                                                                                                                <div style='position:absolute; top:14px; left:0px;'>
-                                                                                                                                    <img src="images/led_ligado.jpeg" id="in4" name="in4" />
+                                            <div style='position:absolute; top:13px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in5" name="in5" />
 
-                                                                                                                                    <div style='position:absolute; top:14px; left:0px;'>
-                                                                                                                                        <img src="images/led_ligado.jpeg" id="in3" name="in3" />
+                                            <div style='position:absolute; top:14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in4" name="in4" />
 
-                                                                                                                                        <div style='position:absolute; top:14px; left:0px;'>
-                                                                                                                                            <img src="images/led_ligado.jpeg" id="in2" name="in2" />
+                                            <div style='position:absolute; top:14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in3" name="in3" />
 
-                                                                                                                                            <div style='position:absolute; top:13px; left:0px;'>
-                                                                                                                                                <img src="images/led_ligado.jpeg" id="in1" name="in1" />
+                                            <div style='position:absolute; top:14px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in2" name="in2" />
 
-                                                                                                                                                <!-- leds entradas A B C D -->
+                                            <div style='position:absolute; top:13px; left:0px;'>
+                                            <img src="images/led_ligado.jpeg" id="in1" name="in1" />
 
-                                                                                                                                                <div style='position:absolute; top:-5px; left:-151px;'>
-                                                                                                                                                    <img src="images/led_ligado.jpeg" id="inD" name="inD" />
+                                            <!-- leds entradas A B C D -->
 
-                                                                                                                                                    <div style='position:absolute; top:0px; left:-29px;'>
-                                                                                                                                                        <img src="images/led_ligado.jpeg" id="inC" name="inC" />
+                                            <div style='position:absolute; top:-5px; left:-151px;'>
+                                            <img src="images/led_ligado.jpeg" id="inD" name="inD" />
 
-                                                                                                                                                        <div style='position:absolute; top:0px; left:-28px;'>
-                                                                                                                                                            <img src="images/led_ligado.jpeg" id="inB" name="inB" />
+                                            <div style='position:absolute; top:0px; left:-29px;'>
+                                            <img src="images/led_ligado.jpeg" id="inC" name="inC" />
 
-                                                                                                                                                            <div style='position:absolute; top:0px; left:-29px;'>
-                                                                                                                                                                <img src="images/led_ligado.jpeg" id="inA" name="inA" />
+                                            <div style='position:absolute; top:0px; left:-28px;'>
+                                            <img src="images/led_ligado.jpeg" id="inB" name="inB" />
 
-                                                                                                                                                            </div>
-                                                                                                                                                        </div>
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                            <div style='position:absolute; top:0px; left:-29px;'>
+                                            <img src="images/led_ligado.jpeg" id="inA" name="inA" />
 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
                                     </div>
+                                   </div>
+                                  </div>
+                                 </div>
                                 </div>
-
+                               </div>
+                              </div>
+                             </div>
                             </div>
+                           </div>
+                          </div>
+                         </div>
                         </div>
+                       </div>
+                      </div>
+                     </div>
                     </div>
-
-                    <form action="comandos.php" method="post">
-                        <div>
-                            <input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Social Externo">
-                            <input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Social Interno">
-                            <input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Garagem">
-                            <input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Subsolo">
-                        </div>
-                    </form>
-
+                   </div>
+                  </div>
+                 </div>
                 </div>
-                <!-- /page content -->
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+	<!-- CARD ACIONAMENTOS   --!>	
+
+          <div class="col-md-1 col-xs-1 widget widget_tally_box">
+            <div class="x_panel fixed_height_390">
+              <div class="x_content">
+
+                <center><div class="flex"></center>                 
+		   <form action="comandos.php" method="post">
+                    <ul class="list-inline count2"> 
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Social Externo"></center>
+                    </ul>
+		   </form>
+                
+
+                <center><div class="flex"></center>                  
+		   <form action="comandos.php" method="post">
+		    <ul class="list-inline count2">                   
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Social Interno"></center>
+                   </ul>
+		   </form>		  
+                
+                
+                <center><div class="flex"></center>                  
+		   <form action="comandos.php" method="post">
+		    <ul class="list-inline count2">
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Garagem"></center>
+                   </ul>
+		   </form>		 
+                
+
+              <center><div class="flex"></center>                 
+		   <form action="comandos.php" method="post">                   
+                    <ul class="list-inline count2"> 
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Subsolo"></center>
+                   </ul>
+		   </form>		 
+                
+
+		<center><div class="flex"></center>                 
+		   <form action="comandos.php" method="post">                    
+                    <ul class="list-inline count2"> 
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Subsolo"></center>
+                   </ul>
+		   </form>
+
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>                    
+       </div>
+
+        <!-- /page content -->
 
                 <!-- footer content -->
                 <footer>

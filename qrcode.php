@@ -359,7 +359,8 @@ function escolheOpcao3 ($opcao3)
                         <div class="col-md-2 col-sm-2 col-xs-2">
                           <input type="text" class="form-control" id="leitor_1" name="leitor_1" value="<?=$qrcode["leitor_1"]?>" placeholder="IP leitor"/>
                         </div>
-                     </div>	  
+		     </div>
+                     	  
 					  
 		      <div class="form-group">
                         <center><label class="control-label col-md-2 col-sm-2 col-xs-2"><h2>Portão</h2></a></label></center>

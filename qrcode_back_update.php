@@ -117,7 +117,7 @@ if (empty($entrada)) {
     )";
     $insere_qrcode = $mysqli->query($sql);
 } else {
-    $sql = "UPDATE qrcode 
+    $sql = "UPDATE leitores_qrcode 
     SET leitor_1 = '".$_REQUEST['leitor_1']."',
         leitor_2 = '".$_REQUEST['leitor_2']."',
         leitor_3 = '".$_REQUEST['leitor_3']."',
