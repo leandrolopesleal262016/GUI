@@ -116,7 +116,9 @@
                </ul>
                <div class="clearfix"></div>
             </div>
-            <textarea name="conteudo_log" id="conteudo_log" style="width:100%" rows="23"></textarea>
+            <textarea name="conteudo_log" id="conteudo_log" style="width:100%" rows="20"></textarea>
+            <br><br>
+            <button type="submit" onClick="limpaLog();" class="btn btn-success btn-lg">Limpar Log</button>
             <!-- footer content -->
             <footer>
                <div class="pull-right">
@@ -137,18 +139,29 @@
       <script src="../vendors/nprogress/nprogress.js"></script>
       <!-- Custom Theme Scripts -->
       <script src="../build/js/custom.min.js"></script>
-      <script>
+      <script>     
+      function limpaLog() {
+          $.ajax({
+              url: "limpa_log.php",
+          }).done(function(data) {
+              $('#conteudo_log').val('');
+          });
+      }
       $(document).ready(function() {
+
             function getData() {
                 $.ajax({
                     url: "controla_log.php",
                 }).done(function(data) {
+                  console.log($("#conteudo_log").val())
                     var data = JSON.parse(data);
                     $('#conteudo_log').val(data.conteudo);
                 });
             }
             getData();
             setInterval(getData, 1000);
+
+            
         });
         </script>
    </body>
