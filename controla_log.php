@@ -1,6 +1,11 @@
 <?php
 
-$conteudo_log = file_get_contents('log.txt');
+
+if ($_REQUEST['arquivo'] == '') {
+    $conteudo_log = file_get_contents('log/log.txt');
+} else {
+    $conteudo_log = file_get_contents('log/'.$_REQUEST['arquivo']);
+}
 
 $retorno = [
     'retorno' => 'ok',
