@@ -17,7 +17,7 @@ if ($qtde_arquivos == 30) {
     unlink('log/'.$arquivos[1]);
 }
 $log_antigo = file_get_contents('log/log.txt');
-$salva_log_antigo = file_put_contents('log/log_'.date('dmYHis').'.txt', print_r($log_antigo, true));
+$salva_log_antigo = file_put_contents('log/log_'.date('d_m_Y_H_i_s').'.txt', print_r($log_antigo, true));
 $limpa_log = file_put_contents('log/log.txt', '');
 
 ?>
