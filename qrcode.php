@@ -196,7 +196,7 @@
    function escolheOpcao3 ($opcao3) 
    {
      echo '<option selected value="">--- nenhuma ---</option>';
-     $path = "mp3/";
+     $path = "/home/pi/CMM/mp3_qr/";
      $diretorio = dir($path);
      while($arquivo = $diretorio -> read()){
        if ($arquivo == '.' || $arquivo == '..') {
