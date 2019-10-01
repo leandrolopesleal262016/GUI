@@ -1,3 +1,20 @@
+<?php
+
+function listaLog () 
+{
+  echo '<option selected value="">--- nenhuma ---</option>';
+  $path = "logqrcode/";
+  $diretorio = dir($path);
+  while($arquivo = $diretorio -> read()){
+    if ($arquivo == '.' || $arquivo == '..') {
+      continue;
+    }
+    echo "<option value=".$arquivo.">".$arquivo."</option>";
+  }
+  $diretorio -> close();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -114,6 +131,16 @@
                </ul>
                <div class="clearfix"></div>
             </div>
+            <div id="mensagem_alert">
+            </div>
+            <div class="form-group">
+            <center><label class="control-label col-md-2"><h2>Mensagem</h2></a></label></center>
+            <div class="col-sm-3">
+            <select class="select2_group form-control" id="log_antigo" name="log_antigo"> 
+            <?php	 listaLog(); ?>                            
+            </select>
+            </div>
+            </div>
             <textarea name="conteudo_log" id="conteudo_log" style="width:100%" rows="20"></textarea>
             <br><br>
             <button type="submit" onClick="limpaLog();" class="btn btn-success btn-lg">Limpar Log</button>
@@ -139,16 +166,24 @@
       <script src="../build/js/custom.min.js"></script>
       <script>
       function limpaLog() {
-          $.ajax({
+        $.ajax({
               url: "limpa_log_qr_code.php",
           }).done(function(data) {
               $('#conteudo_log').val('');
+              $('#mensagem_alert').html('Log Salvo com Sucesso!');
+              $('#mensagem_alert').addClass("alert alert-success");
+              setTimeout(function() {
+                  $('#mensagem_alert').html("");
+                  $('#mensagem_alert').removeClass("alert alert-success");
+              }, 2000);
           });
       }
       $(document).ready(function() {
-            function getData() {
+          function getData() {
+              var dados = $('#log_antigo').val();
                 $.ajax({
                     url: "controla_log_qrcode.php",
+                    data: "arquivo="+dados
                 }).done(function(data) {
                     var data = JSON.parse(data);
                     $('#conteudo_log').val(data.conteudo);

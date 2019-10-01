@@ -1,6 +1,10 @@
 <?php
 
-$conteudo_log = file_get_contents('log_qrcode.txt');
+if ($_REQUEST['arquivo'] == '') {
+    $conteudo_log = file_get_contents('logqrcode/log.txt');
+} else {
+    $conteudo_log = file_get_contents('logqrcode/'.$_REQUEST['arquivo']);
+}
 
 $retorno = [
     'retorno' => 'ok',

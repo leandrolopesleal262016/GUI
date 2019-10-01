@@ -1,6 +1,5 @@
 <?php
 
-
 if ($_REQUEST['arquivo'] == '') {
     $conteudo_log = file_get_contents('log/log.txt');
 } else {
