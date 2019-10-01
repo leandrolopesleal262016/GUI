@@ -11,6 +11,9 @@ if(mysqli_connect_errno()){
 	exit();
 }
 
+$comando = escapeshellcmd('/home/pi/CMM/reinicia.py');
+$cmdResult = shell_exec($comando);
+
 $sql = "SELECT * FROM leitores_qrcode ORDER BY id DESC LIMIT 1";
 $qrcode = $mysqli->query($sql);
 $entrada = $qrcode->fetch_array(MYSQLI_ASSOC);
@@ -172,5 +175,5 @@ if (empty($entrada)) {
 }
 
 
-header('Location: qrcode.php');
+header('Location: qrcode.php?retorno=reinicia');
 ?>

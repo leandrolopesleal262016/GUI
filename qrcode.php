@@ -326,6 +326,15 @@
                            <h2>Leitor de QR Code </h2>
                            <div class="clearfix"></div>
                         </div>
+                        <?php
+                        if (!empty($_REQUEST['retorno']) && $_REQUEST['retorno'] == 'reinicia') {
+                        ?>
+                        <div id="mensagem_alert">
+                          Sistema Reiniciando
+                        </div>
+                        <?php
+                        }
+                        ?>
                         <div class="x_content">
                            <form method="post" action="qrcode_back_update.php">
                            <form class="form-horizontal form-label-left">
@@ -734,5 +743,12 @@
       <script src="../vendors/validator/validator.js"></script>
       <!-- Custom Theme Scripts -->
       <script src="../build/js/custom.min.js"></script>
+      <script>
+          $('#mensagem_alert').addClass("alert alert-success");
+      setTimeout(function() {
+          $('#mensagem_alert').html("");
+          $('#mensagem_alert').removeClass("alert alert-success");
+      }, 5000);
+    </script>
    </body>
 </html>

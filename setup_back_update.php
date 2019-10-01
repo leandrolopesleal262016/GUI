@@ -1,9 +1,9 @@
 <?php
 
 $server = 'localhost';
-$host = 'leandro';
-$senha = '5510';
-$bd = 'CMM';
+$host = 'eduardo';
+$senha = '24ledu28';
+$bd = 'cmm';
 
 $mysqli = new mysqli($server, $host, $senha, $bd);
 
@@ -11,6 +11,9 @@ if(mysqli_connect_errno()){
 	echo "Falha na conexão: (".$mysqli->connect_errno.")".$mysqli->connect_error;
 	exit();
 }
+
+$comando = escapeshellcmd('/home/pi/CMM/reinicia.py');
+$cmdResult = shell_exec($comando);
 
 $sql = "SELECT * FROM entradas ORDER BY id DESC LIMIT 1";
 $entradas = $mysqli->query($sql);
@@ -177,5 +180,5 @@ if (empty($saida)) {
     $update_saidas = $mysqli->query($sql);
 }
 
-header('Location: io.php');
+header('Location: io.php?retorno=reinicia');
 ?>

@@ -1,9 +1,9 @@
 <?php
 
 $server = 'localhost';
-$host = 'leandro';
-$senha = '5510';
-$bd = 'CMM';
+$host = 'eduardo';
+$senha = '24ledu28';
+$bd = 'cmm';
 
 $mysqli = new mysqli($server, $host, $senha, $bd);
 
@@ -349,7 +349,15 @@ function escolheOpcao1 ($opcao1)
                     <h2>Entradas / Saídas <small>Passe o mouse por cima do nome para mais detalhes</small></h2>                    
                     <div class="clearfix"></div>
                   </div>
-				  
+                  <?php
+                  if (!empty($_REQUEST['retorno']) && $_REQUEST['retorno'] == 'reinicia') {
+                  ?>
+                  <div id="mensagem_alert">
+                    Sistema Reiniciando
+                  </div>
+                  <?php
+                  }
+                  ?>
                   <div class="x_content">
 				  
 			<form method="post" action="setup_back_update.php">
@@ -922,7 +930,14 @@ function escolheOpcao1 ($opcao1)
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-    
+    <script>
+          $('#mensagem_alert').addClass("alert alert-success");
+      setTimeout(function() {
+          $('#mensagem_alert').html("");
+          $('#mensagem_alert').removeClass("alert alert-success");
+      }, 5000);
+    </script>
+
 	
 	
   </body>
