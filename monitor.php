@@ -58,7 +58,7 @@ function escolheOpcao($opcao)
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-globe"></i> <span>CEINTEL</span></a>
+              <a href="index.php" class="site_title"><i class="fa fa-globe"></i> <span>CEINTEL</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -76,7 +76,7 @@ function escolheOpcao($opcao)
         
            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+                
 				
 				<ul class="nav side-menu">
 				
@@ -337,10 +337,11 @@ function escolheOpcao($opcao)
 		   </form>		 
                 
 
-		<center><div class="flex"></center>                 
+		<center><div class="flex"></center>		
+                 
 		   <form action="comandos.php" method="post">                    
                     <ul class="list-inline count2"> 
-                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Subsolo"></center>
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-danger" value="Reset do Sistema"></center>
                    </ul>
 		   </form>
 
