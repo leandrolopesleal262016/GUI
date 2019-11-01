@@ -13,7 +13,7 @@ $valida = $mysqli->query($sql);
 $valida = $valida->fetch_array(MYSQLI_ASSOC);
 
 if (!empty($valida)) {
-    header('Location: index.html');
+    header('Location: index.php');
 } else {
     header('Location: login.html');
 }

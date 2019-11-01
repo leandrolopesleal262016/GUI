@@ -24,7 +24,9 @@ function listaLog ()
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
       <title>CMM</title>
+
       <!-- Bootstrap -->
       <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
       <!-- Font Awesome -->
@@ -59,7 +61,7 @@ function listaLog ()
         
            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+                
 				
 				<ul class="nav side-menu">
 				
@@ -112,6 +114,8 @@ function listaLog ()
                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                </a>
             </div>
+
+
             <!-- /menu footer buttons -->
          </div>
       </div>
@@ -146,16 +150,22 @@ function listaLog ()
             <textarea name="conteudo_log" id="conteudo_log" style="width:100%" rows="20"></textarea>
             <br><br>
             <button type="submit" onClick="limpaLog();" class="btn btn-success btn-lg">Limpar Log</button>
-            <!-- footer content -->
-            <footer>
-               <div class="pull-right">
-                  CMM CEINTEL - Admin Template by <a href="https://www.facebook.com/leandro.lopesleal.1">Leandro Leal</a>
-               </div>
-               <div class="clearfix"></div>
-            </footer>
-            <!-- /footer content -->
-         </div>
-      </div>
+
+
+
+             <!-- /page content -->
+
+                <!-- footer content -->
+                <footer>
+                    <div class="pull-right">
+                        CMM CEINTEL - Admin Template by <a href="https://www.facebook.com/leandro.lopesleal.1">Leandro Leal</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+        </div>
+
       <!-- jQuery -->
       <script src="../vendors/jquery/dist/jquery.min.js"></script>
       <!-- Bootstrap -->
