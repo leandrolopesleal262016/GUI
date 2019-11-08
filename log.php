@@ -161,6 +161,7 @@ function listaLog ()
               <option value="Outubro">Janeiro</option> 
               <option value="Novembro">Novembro</option>
               <option value="Dezembro">Dezembro</option>
+              
             </select>
             </div>
             </div>
