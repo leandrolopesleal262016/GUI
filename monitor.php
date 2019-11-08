@@ -324,7 +324,7 @@ function escolheOpcao($opcao)
                 <center><div class="flex"></center>                  
 		   <form action="comandos.php" method="post">
 		    <ul class="list-inline count2">
-                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Garagem"></center>
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Garagem 1"></center>
                    </ul>
 		   </form>		 
                 
@@ -332,7 +332,7 @@ function escolheOpcao($opcao)
               <center><div class="flex"></center>                 
 		   <form action="comandos.php" method="post">                   
                     <ul class="list-inline count2"> 
-                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Subsolo"></center>
+                    <center><input id="botao" name="botao" type="submit" class="btn btn-success" value="Abre Garagem 2"></center>
                    </ul>
 		   </form>		 
                 

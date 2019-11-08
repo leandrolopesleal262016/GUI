@@ -6,6 +6,7 @@ function listaLog ()
   $path = "log/";
   $diretorio = dir($path);
   while($arquivo = $diretorio -> read()){
+    
     if ($arquivo == '.' || $arquivo == '..') {
       continue;
     }
@@ -147,7 +148,20 @@ function listaLog ()
             <center><label class="control-label col-md-2"><h2>Pasta Log</h2></a></label></center>
             <div class="col-sm-3">
             <select class="select2_group form-control" id="log" name="log"> 
-            <?php	 listaLog(); ?>                            
+              <option value="log.txt">log.txt</option>
+              <option value="Janeiro">Janeiro</option>
+              <option value="Fevereiro">Fevereiro</option>                            
+              <option value="Março">Março</option>
+              <option value="Abril">Abril</option>
+              <option value="Maio">Maio</option>
+              <option value="Junho">Junho</option>
+              <option value="Julho">Julho</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Setembro">Setembro</option>
+              <option value="Outubro">Janeiro</option> 
+              <option value="Novembro">Novembro</option>
+              <option value="Dezembro">Dezembro</option>
+              
             </select>
             </div>
             </div>

@@ -23,12 +23,12 @@ switch ($botao) {
         $campo = "abre_social_interno";       
         break;
 
-    case 'Abre Garagem':
-        $campo = "abre_garagem";       
+    case 'Abre Garagem 1':
+        $campo = "abre_garagem1";       
         break;
 
-    case 'Abre Subsolo':
-        $campo = "abre_subsolo";       
+    case 'Abre Garagem 2':
+        $campo = "abre_garagem2";       
         break;
 }
 
