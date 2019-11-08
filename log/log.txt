@@ -1,1 +1,27 @@
-Arquivo para registros de log temporario
+
+08/11/19 - 17:24:05  Evento:  Reconheceu tx Garagem 1
+
+08/11/19 - 17:24:10  Evento:  Reconheceu tx Garagem 2
+08/11/19 - 17:24:13  Evento:  Portão Garagem 2 não abriu
+
+08/11/19 - 17:25:33  Evento:  Reconheceu abre Garagem 1 Interface gráfica
+08/11/19 - 17:25:35  Evento:  Portão Garagem 2 não abriu
+08/11/19 - 17:25:38  Evento:  Portão Garagem 1 não abriu
+
+08/11/19 - 17:27:09  Evento:  Reconheceu tx Garagem 2
+
+08/11/19 - 17:27:09  Evento:  Reconheceu tx Garagem 1
+
+08/11/19 - 17:27:13  Evento:  Reconheceu tx Garagem 2
+08/11/19 - 17:27:13  Evento:  Portão Garagem 1 não abriu
+08/11/19 - 17:27:16  Evento:  Portão Garagem 2 não abriu
+08/11/19 - 17:27:24  Evento:  Intertravamento habilitado
+
+
+08/11/19 - 17:27:26  Evento:  Reconheceu abre Garagem 1 Interface gráfica
+08/11/19 - 17:27:27  Evento:  Abrindo Social pela Central de Monitoramento...
+
+08/11/19 - 17:27:28  Evento:  Reconheceu abre Garagem 2 Interface gráfica
+08/11/19 - 17:27:31  Evento:  Portão Social emperrado
+08/11/19 - 17:27:39  Evento:  Abrindo Eclusa pela Central de Monitoramento...
+08/11/19 - 17:27:43  Evento:  Portão Eclusa emperrado

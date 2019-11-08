@@ -1,0 +1,52 @@
+
+08/11/19 - 17:17:35  Evento:  Salvo o log do dia na pasta correspondente
+
+08/11/19 - 17:21:36  Evento:  Configuração das entradas:
+
+08/11/19 - 17:21:36  Evento:  IN1: pm_social_externo
+08/11/19 - 17:21:36  Evento:  IN2: pm_social_interno
+08/11/19 - 17:21:36  Evento:  IN3: 
+08/11/19 - 17:21:36  Evento:  IN4: 
+08/11/19 - 17:21:36  Evento:  IN5: abre_social_externo
+08/11/19 - 17:21:36  Evento:  IN6: abre_social_interno
+08/11/19 - 17:21:36  Evento:  IN7: 
+08/11/19 - 17:21:36  Evento:  IN8: quebra_vidro_interno_eclusa
+08/11/19 - 17:21:36  Evento:  INA: 
+08/11/19 - 17:21:36  Evento:  INB: 
+08/11/19 - 17:21:36  Evento:  INC: 
+08/11/19 - 17:21:36  Evento:  IND: 
+
+08/11/19 - 17:21:36  Evento:  Conectado com Leitor 1
+08/11/19 - 17:21:36  Evento:  Conectado com Leitor 2
+
+08/11/19 - 17:21:37  Evento:  Configuração das saídas:
+
+08/11/19 - 17:21:37  Evento:  OUT1: abre_social_externo
+08/11/19 - 17:21:37  Evento:  OUT2: abre_social_interno
+08/11/19 - 17:21:37  Evento:  OUT3: impede_abertura_externo
+08/11/19 - 17:21:37  Evento:  OUT4: impede_abertura_interno
+08/11/19 - 17:21:37  Evento:  OUT5: 
+08/11/19 - 17:21:37  Evento:  OUT6: 
+08/11/19 - 17:21:37  Evento:  OUT7: 
+08/11/19 - 17:21:37  Evento:  OUT8: sirene
+08/11/19 - 17:21:37  Evento:  OUT9: 
+08/11/19 - 17:21:37  Evento:  OUT10: 
+08/11/19 - 17:21:37  Evento:  OUT11: 
+08/11/19 - 17:21:37  Evento:  OUT12: 
+08/11/19 - 17:21:37  Evento:  OUT13: 
+08/11/19 - 17:21:37  Evento:  OUT14: 
+08/11/19 - 17:21:37  Evento:  OUT15: 
+08/11/19 - 17:21:37  Evento:  OUT16: 
+
+08/11/19 - 17:21:39  Evento:  Reiniciou o sistema
+08/11/19 - 17:21:39  Evento:  Nome desta maquina Desenvolvimento
+08/11/19 - 17:21:40  Evento:  Programa Garagem 1 em execução no expansor 1... 
+08/11/19 - 17:21:40  Evento:  Programa Sociais em execução 
+08/11/19 - 17:21:40  Evento:  Programa Garagem 2 em execução no expansor 2... 
+08/11/19 - 17:21:41  Evento:  Temperatura processador 44°C
+
+
+08/11/19 - 17:21:41  Evento:  O Sistema está conectado a internet
+08/11/19 - 17:21:41  Evento:  Em Bauru chuva moderada e 21 graus
+08/11/19 - 17:21:42  Evento:  Aguardando novos cadastros de QRCODE...
+08/11/19 - 17:21:42  Evento:  Programa arrombamento de portões sociais em execução
