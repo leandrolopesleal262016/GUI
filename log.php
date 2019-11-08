@@ -2,14 +2,18 @@
 
 function listaLog () 
 {
-  echo '<option selected value="">--- nenhuma ---</option>';
+  //echo '<option selected value="">--- nenhuma ---</option>';
   $path = "log/";
   $diretorio = dir($path);
   while($arquivo = $diretorio -> read()){
     if ($arquivo == '.' || $arquivo == '..') {
       continue;
     }
-    echo "<option value=".$arquivo.">".$arquivo."</option>";
+    if ($arquivo == 'log.txt') {
+      echo "<option selected value=".$arquivo.">".$arquivo."</option>";
+    } else {
+      echo "<option value=".$arquivo.">".$arquivo."</option>";
+    }
   }
   $diretorio -> close();
 }
@@ -140,19 +144,24 @@ function listaLog ()
             <div id="mensagem_alert">
             </div>
             <div class="form-group">
-            <center><label class="control-label col-md-2"><h2>Mensagem</h2></a></label></center>
+            <center><label class="control-label col-md-2"><h2>Pasta Log</h2></a></label></center>
             <div class="col-sm-3">
-            <select class="select2_group form-control" id="log_antigo" name="log_antigo"> 
+            <select class="select2_group form-control" id="log" name="log"> 
             <?php	 listaLog(); ?>                            
+            </select>
+            </div>
+            </div>
+            <div class="form-group">
+            <center><label class="control-label col-md-2"><h2>Arquivos</h2></a></label></center>
+            <div class="col-sm-3">
+            <select class="select2_group form-control" id="arquivos" name="arquivos"> 
+                                        
             </select>
             </div>
             </div>
             <textarea name="conteudo_log" id="conteudo_log" style="width:100%" rows="20"></textarea>
             <br><br>
-            <button type="submit" onClick="limpaLog();" class="btn btn-success btn-lg">Limpar Log</button>
-
-
-
+        
              <!-- /page content -->
 
                 <!-- footer content -->
@@ -177,33 +186,51 @@ function listaLog ()
       <!-- Custom Theme Scripts -->
       <script src="../build/js/custom.min.js"></script>
       <script>     
-      function limpaLog() {
-          $.ajax({
-              url: "limpa_log.php",
-          }).done(function(data) {
-              $('#conteudo_log').val('');
-              $('#mensagem_alert').html('Log Salvo com Sucesso!');
-              $('#mensagem_alert').addClass("alert alert-success");
-              setTimeout(function() {
-                  $('#mensagem_alert').html("");
-                  $('#mensagem_alert').removeClass("alert alert-success");
-              }, 2000);
-          });
-      }
       $(document).ready(function() {
-
             function getData() {
-              var dados = $('#log_antigo').val();
+              var dados = $('#log').val();
+              if (dados == 'log.txt') {
                 $.ajax({
-                    url: "controla_log.php",
-                    data: "arquivo="+dados
+                  url: "controla_log.php",
+                  data: "arquivo="+dados
                 }).done(function(data) {
-                    var data = JSON.parse(data);
-                    $('#conteudo_log').val(data.conteudo);
-                });
+                  var data = JSON.parse(data);
+                  if (data.tipo == 'arquivo') {
+                    $('#conteudo_log').val(data.conteudo); 
+                  }
+                });  
+              } else {
+                $.ajax({
+                  url: "controla_log.php",
+                  data: "arquivo="+dados
+                }).done(function(data) {
+                  var pasta = $('#log').val();
+                  var arquivo = $('#arquivos').val();
+                    $.ajax({
+                        url: "controla_log.php",
+                        data: "arquivo="+arquivo+"&pasta="+pasta
+                    }).done(function(data) {
+                        var data = JSON.parse(data);
+                        if (data.tipo == 'arquivo') {
+                          $('#conteudo_log').val(data.conteudo); 
+                        }
+                    });
+                }); 
+              }
             }
             getData();
-            setInterval(getData, 1000);            
+            setInterval(getData, 1000);   
+
+            $('#log').change(function(){
+              var dados = $('#log').val();
+              $.ajax({
+                  url: "controla_log.php",
+                  data: "arquivo="+dados
+                }).done(function(data) {
+                  var data = JSON.parse(data);
+                    $('#arquivos').html(data.conteudo); 
+                }); 
+            });       
         });
         </script>
    </body>
