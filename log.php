@@ -158,7 +158,7 @@ function listaLog ()
               <option value="Julho">Julho</option>
               <option value="Agosto">Agosto</option>
               <option value="Setembro">Setembro</option>
-              <option value="Outubro">Janeiro</option> 
+              <option value="Outubro">Outubro</option> 
               <option value="Novembro">Novembro</option>
               <option value="Dezembro">Dezembro</option>
               
