@@ -30,6 +30,10 @@ switch ($botao) {
     case 'Abre Garagem 2':
         $campo = "abre_garagem2";       
         break;
+
+    case 'Reinicia o Sistema':
+        $campo = "reset";       
+        break;
 }
 
 $sql = "SELECT * FROM comandos LIMIT 1";

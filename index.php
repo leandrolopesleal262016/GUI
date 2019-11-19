@@ -39,7 +39,7 @@ function escolheOpcao($opcao)
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-        <title>CMM</title>
+        <title>SOHO</title>
 
         <!-- Bootstrap -->
         <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -84,7 +84,7 @@ function escolheOpcao($opcao)
                     <ul class="nav child_menu">				                        
                       <li><a href="monitor.php">Monitor I/O</a></li>
 		      <li><a href="log.php">Log CMM</a></li>
-		      <li><a href="log_qrcode.php">Log QR Code</a></li>					  
+		     				  
 		     </ul>
                   </li>	
                                 

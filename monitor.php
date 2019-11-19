@@ -39,7 +39,7 @@ function escolheOpcao($opcao)
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-        <title>CMM</title>
+        <title>SOHO</title>
 
         <!-- Bootstrap -->
         <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -84,7 +84,7 @@ function escolheOpcao($opcao)
                     <ul class="nav child_menu">				                        
                       <li><a href="monitor.php">Monitor I/O</a></li>
 		      <li><a href="log.php">Log CMM</a></li>
-		      <li><a href="log_qrcode.php">Log QR Code</a></li>					  
+		      				  
 		     </ul>
                   </li>	
                                 
@@ -341,7 +341,7 @@ function escolheOpcao($opcao)
                  
 		   <form action="comandos.php" method="post">                    
                     <ul class="list-inline count2"> 
-                    <center><input id="botao" name="botao" type="submit" class="btn btn-danger" value="Reset do Sistema"></center>
+                    <center><input id="botao" name="botao" type="submit" title="O equipamento leva em torno de 20 segundos para reiniciar"class="btn btn-danger" value="Reinicia o Sistema"></center>
                    </ul>
 		   </form>
 
