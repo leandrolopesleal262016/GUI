@@ -145,7 +145,7 @@ function listaLog ()
             <div id="mensagem_alert">
             </div>
             <div class="form-group">
-            <center><label class="control-label col-md-2"><h2>Pasta Log</h2></a></label></center>
+            <center><label class="control-label col-md-2"><h2>Mês</h2></a></label></center>
             <div class="col-sm-3">
             <select class="select2_group form-control" id="log" name="log"> 
               <option value="log.txt">log.txt</option>
@@ -166,7 +166,7 @@ function listaLog ()
             </div>
             </div>
             <div class="form-group">
-            <center><label class="control-label col-md-2"><h2>Arquivos</h2></a></label></center>
+            <center><label class="control-label col-md-2"><h2>Dia</h2></a></label></center>
             <div class="col-sm-3">
             <select class="select2_group form-control" id="arquivos" name="arquivos"> 
                                         
